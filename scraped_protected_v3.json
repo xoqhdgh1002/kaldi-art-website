@@ -1,0 +1,60 @@
+{
+  "artists": {
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/artists",
+    "h1": "This page is protected",
+    "h2s": [],
+    "h3s": [],
+    "bodyText": "THIS PAGE IS PROTECTED\nSUBMIT\nBACK TO HOMEPAGE",
+    "images": [],
+    "links": [
+      {
+        "text": "Submit",
+        "href": "https://kaldiart.com/artists#"
+      },
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      },
+      {
+        "text": "Previous",
+        "href": "https://kaldiart.com/artists#"
+      },
+      {
+        "text": "Next",
+        "href": "https://kaldiart.com/artists#"
+      }
+    ],
+    "items": []
+  },
+  "projects": {
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/exhibitions",
+    "h1": "Confirm Your Access Request to KALDI ART Projects",
+    "h2s": [],
+    "h3s": [],
+    "bodyText": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nSUBMIT\nBACK TO HOMEPAGE",
+    "images": [],
+    "links": [
+      {
+        "text": "Submit",
+        "href": "https://kaldiart.com/exhibitions#"
+      },
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      },
+      {
+        "text": "Previous",
+        "href": "https://kaldiart.com/exhibitions#"
+      },
+      {
+        "text": "Next",
+        "href": "https://kaldiart.com/exhibitions#"
+      }
+    ],
+    "items": []
+  },
+  "artistDetails": [],
+  "projectDetails": []
+}

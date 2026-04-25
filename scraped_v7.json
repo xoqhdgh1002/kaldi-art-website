@@ -1,0 +1,26 @@
+{
+  "artists": {
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/artists",
+    "text": "THIS PAGE IS PROTECTED\nSUBMIT\nBACK TO HOMEPAGE",
+    "imgs": [],
+    "links": [
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/exhibitions",
+    "text": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nSUBMIT\nBACK TO HOMEPAGE",
+    "imgs": [],
+    "links": [
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      }
+    ]
+  }
+}

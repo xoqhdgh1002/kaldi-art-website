@@ -1,0 +1,984 @@
+{
+  "timestamp": "2026-04-15T12:37:30.042Z",
+  "summary": {
+    "total": 139,
+    "downloaded": 139,
+    "skipped": 0,
+    "failed": 0
+  },
+  "files": [
+    {
+      "filename": "berlin-meets-seoul_2747-cropped.jpg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/pages/slideshow_data/1/berlin-meets-seoul_2747-cropped.jpg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 597062
+    },
+    {
+      "filename": "screenshot-2025-01-23-at-07.19.51.png",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/screenshot-2025-01-23-at-07.19.51.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 77930
+    },
+    {
+      "filename": "kim-hyungdae-08-424-2008-acrylic-on-canvas-140-x-140-cm.jpg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/kim-hyungdae-08-424-2008-acrylic-on-canvas-140-x-140-cm.jpg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 224358
+    },
+    {
+      "filename": "exhibition-view-the-little-house-they-used-to-live-in-galerie-gp-n-vallois-2021-2.jpeg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/exhibition-view-the-little-house-they-used-to-live-in-galerie-gp-n-vallois-2021-2.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 108288
+    },
+    {
+      "filename": "1.jpeg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/1.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 130140
+    },
+    {
+      "filename": "view2.jpeg",
+      "url": "https://static-assets.artlogic.net/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/pages/slideshow_data/1/view2.jpeg?focal=51,34",
+      "source": "home",
+      "status": "downloaded",
+      "size": 68326
+    },
+    {
+      "filename": "discussion-2022-101-mixed-media-91-72.7cm-2022-.jpeg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/discussion-2022-101-mixed-media-91-72.7cm-2022-.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 112376
+    },
+    {
+      "filename": "meme-me-zohar-fraiman-hal-2024-4-2100x1400.jpeg",
+      "url": "https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/images/main/pages/1/meme-me-zohar-fraiman-hal-2024-4-2100x1400.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 70460
+    },
+    {
+      "filename": "lb4-museum-san_8.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/21/lb4-museum-san.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 18972
+    },
+    {
+      "filename": "11_10.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/20/11.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 37480
+    },
+    {
+      "filename": "cover_8.png",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/18/cover.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 14608
+    },
+    {
+      "filename": "8-2_10.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/17/8-2.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 14852
+    },
+    {
+      "filename": "tefaf-maastricht-2026.-courtesy-of-tefaf_6.jpg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/16/tefaf-maastricht-2026.-courtesy-of-tefaf.jpg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 27232
+    },
+    {
+      "filename": "frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze_6.jpg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/15/frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze.jpg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 46194
+    },
+    {
+      "filename": "page14-img14.jpg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/14/.-..jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 37350
+    },
+    {
+      "filename": "rm.png",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image_override/12/rm.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 18182
+    },
+    {
+      "filename": "5_2.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image_override/11/5.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 18198
+    },
+    {
+      "filename": "hongkong_6.png",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/10/hongkong.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 66052
+    },
+    {
+      "filename": "esther-schipper-seoul-conversations-004-copy_6.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/8/esther-schipper-seoul-conversations-004-copy.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 9856
+    },
+    {
+      "filename": "doho-suh_6.png",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/5/doho-suh.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 15218
+    },
+    {
+      "filename": "ubs_4.png",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/70/709e730f01814308a30eda16bd5cfc3b/ubs.png",
+      "source": "home",
+      "status": "downloaded",
+      "size": 16420
+    },
+    {
+      "filename": "arco-2026_4.jpeg",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/6f/6f0c2da03fe54fd59d4609271fc07f11/arco-2026.jpeg",
+      "source": "home",
+      "status": "downloaded",
+      "size": 12894
+    },
+    {
+      "filename": "logo-white-bg_2.png",
+      "url": "https://static-assets.artlogic.net/w_1000,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/preferences/logo-white-bg.png",
+      "source": "home [bg]",
+      "status": "downloaded",
+      "size": 15160
+    },
+    {
+      "filename": "d7hftxdivxxvm.cloudfront.net.jpg",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/feature_panels/image/items/56/56dc2bd4e9c74fc1882a3dbd4dbf1675/d7hftxdivxxvm.cloudfront.net.jpg",
+      "source": "advisory",
+      "status": "downloaded",
+      "size": 45598
+    },
+    {
+      "filename": "j.jpeg",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/feature_panels/image/items/58/580a08a32a1e4b1ca5be9e9154a8d7cd/j.jpeg",
+      "source": "advisory",
+      "status": "downloaded",
+      "size": 12708
+    },
+    {
+      "filename": "mmca.jpg",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/feature_panels/image/items/0f/0f5845f40c044472bab8ea387dfaa5f4/mmca.jpg",
+      "source": "advisory",
+      "status": "downloaded",
+      "size": 15522
+    },
+    {
+      "filename": "h.png",
+      "url": "https://static-assets.artlogic.net/w_620,h_620,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/feature_panels/image/items/66/66834e382796499d806ce8627cb31ac8/h.png",
+      "source": "advisory",
+      "status": "downloaded",
+      "size": 45314
+    },
+    {
+      "filename": "lb4-museum-san_9.jpeg",
+      "url": "https://static-assets.artlogic.net/w_345,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/21/lb4-museum-san.jpeg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 8060
+    },
+    {
+      "filename": "11_11.jpeg",
+      "url": "https://static-assets.artlogic.net/w_345,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/20/11.jpeg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 15396
+    },
+    {
+      "filename": "cover_9.png",
+      "url": "https://static-assets.artlogic.net/w_345,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/18/cover.png",
+      "source": "news",
+      "status": "downloaded",
+      "size": 6634
+    },
+    {
+      "filename": "8-2_11.jpeg",
+      "url": "https://static-assets.artlogic.net/w_345,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/17/8-2.jpeg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 6950
+    },
+    {
+      "filename": "taipei-dangdai-courtesy-of-taipei-dangdei_6.jpg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/9/taipei-dangdai-courtesy-of-taipei-dangdei.jpg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 44520
+    },
+    {
+      "filename": "artbasel-2025_6.jpg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/7/artbasel-2025.jpg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 29048
+    },
+    {
+      "filename": "2_8.jpeg",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/6/2.jpeg",
+      "source": "news",
+      "status": "downloaded",
+      "size": 24834
+    },
+    {
+      "filename": "kaldi-1x1_blue_6.png",
+      "url": "https://static-assets.artlogic.net/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/4/kaldi-1x1_blue.png",
+      "source": "news",
+      "status": "downloaded",
+      "size": 4596
+    },
+    {
+      "filename": "lb4-museum-san_10.jpeg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/21/lb4-museum-san.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 21772
+    },
+    {
+      "filename": "lb4-museum-san_11.jpeg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/21/lb4-museum-san.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 30046
+    },
+    {
+      "filename": "lb1_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb1.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 4762233
+    },
+    {
+      "filename": "lb9_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb9.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 630965
+    },
+    {
+      "filename": "lb6_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb6.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 150164
+    },
+    {
+      "filename": "lb5_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb5.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 1434075
+    },
+    {
+      "filename": "lb3_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb3.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 602659
+    },
+    {
+      "filename": "lb7_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb7.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 456745
+    },
+    {
+      "filename": "lb8_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lb8.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/21-lee-bae-en-attendant-waiting-wonju/",
+      "status": "downloaded",
+      "size": 667372
+    },
+    {
+      "filename": "11_12.jpeg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/20/11.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 42310
+    },
+    {
+      "filename": "11_13.jpeg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/20/11.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 57728
+    },
+    {
+      "filename": "13_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/13.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 183993
+    },
+    {
+      "filename": "2_9.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 132423
+    },
+    {
+      "filename": "16_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/16.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 346128
+    },
+    {
+      "filename": "3_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/3.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/20-centre-pompidou-opening-this-june-seoul/",
+      "status": "downloaded",
+      "size": 167265
+    },
+    {
+      "filename": "cover_10.png",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/18/cover.png",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 16304
+    },
+    {
+      "filename": "cover_11.png",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/18/cover.png",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 22212
+    },
+    {
+      "filename": "printa_3-6_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/printa_3-6.jpg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 112196
+    },
+    {
+      "filename": "2026-abhk-_unnamed-3_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/2026-abhk-_unnamed-3.jpg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 71114
+    },
+    {
+      "filename": "abhk_2026_sales_report_bnm.png_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/abhk_2026_sales_report_bnm.png.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 227701
+    },
+    {
+      "filename": "tracey_emin__take_me_to_heaven__2024___white_cube_galleries_abhk2_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/tracey_emin__take_me_to_heaven__2024___white_cube_galleries_abhk2.jpg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 238884
+    },
+    {
+      "filename": "lee_shinja__legend__1980s__tina_kim_gallery__galleries_sector_abh_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/lee_shinja__legend__1980s__tina_kim_gallery__galleries_sector_abh.jpg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 467472
+    },
+    {
+      "filename": "moka-lee-innuendo-02-here-and-now-2026-oil-on-cotton-194-x-157.5-cm-_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/moka-lee-innuendo-02-here-and-now-2026-oil-on-cotton-194-x-157.5-cm-.png",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 113264
+    },
+    {
+      "filename": "a-work-by-amedeo-modigliani-presented-by-pace-gallery-in-the-main-sector-of-art-basel-hong-kong-2026._2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/a-work-by-amedeo-modigliani-presented-by-pace-gallery-in-the-main-sector-of-art-basel-hong-kong-2026..jpeg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 380920
+    },
+    {
+      "filename": "zero-10-exhibitors-at-art-basel-hong-kong-2026_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/zero-10-exhibitors-at-art-basel-hong-kong-2026.png",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 162610
+    },
+    {
+      "filename": "christies_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/christies.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 100775
+    },
+    {
+      "filename": "sanyu-cheval-agenouill-sur-un-tapis-kneeling-horse-on-carpet-1950s-1960s.-oil-on-masonite-49-x-74.2-cm-20th-21st-century-evening-sale-at-christie-s-hk_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/sanyu-cheval-agenouill-sur-un-tapis-kneeling-horse-on-carpet-1950s-1960s.-oil-on-masonite-49-x-74.2-cm-20th-21st-century-evening-sale-at-christie-s-hk.png",
+      "source": "news-detail: https://kaldiart.com/news/18-art-basel-hong-kong-2026-hong-kong/",
+      "status": "downloaded",
+      "size": 186928
+    },
+    {
+      "filename": "8-2_12.jpeg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/17/8-2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 16602
+    },
+    {
+      "filename": "8-2_13.jpeg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/17/8-2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 19366
+    },
+    {
+      "filename": "2_portrait-of-a-young-man-1944-black-crayon-white-chalk-on-paper-the-lucian-freud-archive.-all-rights-reserved-2025-bridgeman-images.-private-collection_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/2_portrait-of-a-young-man-1944-black-crayon-white-chalk-on-paper-the-lucian-freud-archive.-all-rights-reserved-2025-bridgeman-images.-private-collection.jpg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 598680
+    },
+    {
+      "filename": "3-2_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/3-2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 97955
+    },
+    {
+      "filename": "4_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/4.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 13854
+    },
+    {
+      "filename": "5-2_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/5-2.png",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 74702
+    },
+    {
+      "filename": "6_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/6.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 344503
+    },
+    {
+      "filename": "7_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/7.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 104317
+    },
+    {
+      "filename": "8-2_14.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/8-2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 50652
+    },
+    {
+      "filename": "9_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/9.png",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 128054
+    },
+    {
+      "filename": "img_9697_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/img_9697.jpg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 1064156
+    },
+    {
+      "filename": "11_14.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/11.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 1648489
+    },
+    {
+      "filename": "12-1_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/12-1.jpg",
+      "source": "news-detail: https://kaldiart.com/news/17-march-on-view-worldwide/",
+      "status": "downloaded",
+      "size": 849154
+    },
+    {
+      "filename": "tefaf-maastricht-2026.-courtesy-of-tefaf_7.jpg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/16/tefaf-maastricht-2026.-courtesy-of-tefaf.jpg",
+      "source": "news-detail: https://kaldiart.com/news/16-tefaf-2026-maastricht/",
+      "status": "downloaded",
+      "size": 30414
+    },
+    {
+      "filename": "tefaf-maastricht-2026.-courtesy-of-tefaf_8.jpg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/16/tefaf-maastricht-2026.-courtesy-of-tefaf.jpg",
+      "source": "news-detail: https://kaldiart.com/news/16-tefaf-2026-maastricht/",
+      "status": "downloaded",
+      "size": 40660
+    },
+    {
+      "filename": "tefaf-courtesy-of-tefaf_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/tefaf-courtesy-of-tefaf.jpg",
+      "source": "news-detail: https://kaldiart.com/news/16-tefaf-2026-maastricht/",
+      "status": "downloaded",
+      "size": 183008
+    },
+    {
+      "filename": "tefaf-thalita-hamaoui-estrela-materia-memoria-2026-courtesy-marianne-boesky_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/tefaf-thalita-hamaoui-estrela-materia-memoria-2026-courtesy-marianne-boesky.jpg",
+      "source": "news-detail: https://kaldiart.com/news/16-tefaf-2026-maastricht/",
+      "status": "downloaded",
+      "size": 113936
+    },
+    {
+      "filename": "tefaf-grimm-caroline-walker_showbar-2026_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/tefaf-grimm-caroline-walker_showbar-2026.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/16-tefaf-2026-maastricht/",
+      "status": "downloaded",
+      "size": 2374326
+    },
+    {
+      "filename": "frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze_7.jpg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/15/frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze.jpg",
+      "source": "news-detail: https://kaldiart.com/news/15-la-art-week-2026-a-city-that-showed-los-angeles/",
+      "status": "downloaded",
+      "size": 53146
+    },
+    {
+      "filename": "frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze_8.jpg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/15/frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze.jpg",
+      "source": "news-detail: https://kaldiart.com/news/15-la-art-week-2026-a-city-that-showed-los-angeles/",
+      "status": "downloaded",
+      "size": 76104
+    },
+    {
+      "filename": "frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze.-2_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/frieze-los-angeles-2026.-image-by-casey-kelbaugh-cka.-courtesy-of-frieze.-2.jpg",
+      "source": "news-detail: https://kaldiart.com/news/15-la-art-week-2026-a-city-that-showed-los-angeles/",
+      "status": "downloaded",
+      "size": 225400
+    },
+    {
+      "filename": "view-of-the-felix-art-fair-in-los-angeles-from-the-hollywood-roosevelt-pool-2025.-courtesy-of-felix-art-fair_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/view-of-the-felix-art-fair-in-los-angeles-from-the-hollywood-roosevelt-pool-2025.-courtesy-of-felix-art-fair.jpg",
+      "source": "news-detail: https://kaldiart.com/news/15-la-art-week-2026-a-city-that-showed-los-angeles/",
+      "status": "downloaded",
+      "size": 415214
+    },
+    {
+      "filename": "page84-img84.jpg",
+      "url": "https://kaldiart.com/usr/library/main/images/.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 183439
+    },
+    {
+      "filename": "85102_97471_2354_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/85102_97471_2354.jpg",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 32232
+    },
+    {
+      "filename": "tank_2-1-scaled_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/tank_2-1-scaled.jpg",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 246254
+    },
+    {
+      "filename": "mmca_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/mmca.png",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 85994
+    },
+    {
+      "filename": "exhibition-view_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/exhibition-view.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 221353
+    },
+    {
+      "filename": "20231204-216_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/20231204-216.jpg",
+      "source": "news-detail: https://kaldiart.com/news/14-new-media-art-focused-seo-seoul-museum-of-art-to-seoul/",
+      "status": "downloaded",
+      "size": 66996
+    },
+    {
+      "filename": "chusa-kim-jeong-hui-orchid-paintings-and-writings-19th-century-joseon-dynasty-collection-of-rm_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/chusa-kim-jeong-hui-orchid-paintings-and-writings-19th-century-joseon-dynasty-collection-of-rm.jpg",
+      "source": "news-detail: https://kaldiart.com/news/12-rm-x-sfmoma-in-2026-san-francisco/",
+      "status": "downloaded",
+      "size": 69706
+    },
+    {
+      "filename": "yun-hyong-keun-blue-umber-79-c6-1979-.-collection-of-rm-yun-seong-ryeol-courtesy-pkm-gallery_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/yun-hyong-keun-blue-umber-79-c6-1979-.-collection-of-rm-yun-seong-ryeol-courtesy-pkm-gallery.jpg",
+      "source": "news-detail: https://kaldiart.com/news/12-rm-x-sfmoma-in-2026-san-francisco/",
+      "status": "downloaded",
+      "size": 175498
+    },
+    {
+      "filename": "kim-whanki-26-i-70-1970-.-san-francisco-museum-of-modern-art-gift-of-mrs.-whanki-kim-estate-of-whanki-kim.-photo-katherine-du-tiel_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/kim-whanki-26-i-70-1970-.-san-francisco-museum-of-modern-art-gift-of-mrs.-whanki-kim-estate-of-whanki-kim.-photo-katherine-du-tiel.jpg",
+      "source": "news-detail: https://kaldiart.com/news/12-rm-x-sfmoma-in-2026-san-francisco/",
+      "status": "downloaded",
+      "size": 1115652
+    },
+    {
+      "filename": "00_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/00.jpg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 27868
+    },
+    {
+      "filename": "0_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/0.jpg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 98122
+    },
+    {
+      "filename": "5_3.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/5.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 177787
+    },
+    {
+      "filename": "6_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/6.jpg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 48074
+    },
+    {
+      "filename": "8_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/8.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 29942
+    },
+    {
+      "filename": "8_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/8.png",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 147916
+    },
+    {
+      "filename": "10_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/10.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/11-on-view-exhibition-highlights-seoul/",
+      "status": "downloaded",
+      "size": 153576
+    },
+    {
+      "filename": "hongkong_7.png",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/10/hongkong.png",
+      "source": "news-detail: https://kaldiart.com/news/10-asias-art-market-first-half-of-2025-asia/",
+      "status": "downloaded",
+      "size": 76084
+    },
+    {
+      "filename": "hongkong_8.png",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/10/hongkong.png",
+      "source": "news-detail: https://kaldiart.com/news/10-asias-art-market-first-half-of-2025-asia/",
+      "status": "downloaded",
+      "size": 103152
+    },
+    {
+      "filename": "taipei-dangdai-courtesy-of-taipei-dangdei_7.jpg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/9/taipei-dangdai-courtesy-of-taipei-dangdei.jpg",
+      "source": "news-detail: https://kaldiart.com/news/9-rethinking-art-fairs-taipei-dangdai-pauses-2026-edition-taiwan/",
+      "status": "downloaded",
+      "size": 50540
+    },
+    {
+      "filename": "taipei-dangdai-courtesy-of-taipei-dangdei_8.jpg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/9/taipei-dangdai-courtesy-of-taipei-dangdei.jpg",
+      "source": "news-detail: https://kaldiart.com/news/9-rethinking-art-fairs-taipei-dangdai-pauses-2026-edition-taiwan/",
+      "status": "downloaded",
+      "size": 67302
+    },
+    {
+      "filename": "esther-schipper-seoul-conversations-004-copy_7.jpeg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/8/esther-schipper-seoul-conversations-004-copy.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/8-berlin-galleries-expand-to-seoul-amid-a-rising-berlin-seoul/",
+      "status": "downloaded",
+      "size": 10874
+    },
+    {
+      "filename": "esther-schipper-seoul-conversations-004-copy_8.jpeg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/8/esther-schipper-seoul-conversations-004-copy.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/8-berlin-galleries-expand-to-seoul-amid-a-rising-berlin-seoul/",
+      "status": "downloaded",
+      "size": 14418
+    },
+    {
+      "filename": "artbasel-2025_7.jpg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/7/artbasel-2025.jpg",
+      "source": "news-detail: https://kaldiart.com/news/7-art-basel-2025-basel/",
+      "status": "downloaded",
+      "size": 32284
+    },
+    {
+      "filename": "artbasel-2025_8.jpg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/7/artbasel-2025.jpg",
+      "source": "news-detail: https://kaldiart.com/news/7-art-basel-2025-basel/",
+      "status": "downloaded",
+      "size": 42036
+    },
+    {
+      "filename": "doho-suh_7.png",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/5/doho-suh.png",
+      "source": "news-detail: https://kaldiart.com/news/5-do-ho-suhs-walk-the-house-at-tate-london/",
+      "status": "downloaded",
+      "size": 17038
+    },
+    {
+      "filename": "doho-suh_8.png",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/5/doho-suh.png",
+      "source": "news-detail: https://kaldiart.com/news/5-do-ho-suhs-walk-the-house-at-tate-london/",
+      "status": "downloaded",
+      "size": 22594
+    },
+    {
+      "filename": "2_10.jpeg",
+      "url": "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/6/2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/6-young-korean-artists-2025-at-mmca-korea/",
+      "status": "downloaded",
+      "size": 28016
+    },
+    {
+      "filename": "2_11.jpeg",
+      "url": "https://static-assets.artlogic.net/w_800,h_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/main_image/6/2.jpeg",
+      "source": "news-detail: https://kaldiart.com/news/6-young-korean-artists-2025-at-mmca-korea/",
+      "status": "downloaded",
+      "size": 39776
+    },
+    {
+      "filename": "kaldi-1x1_white_4.png",
+      "url": "https://static-assets.artlogic.net/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/images/4/kaldi-1x1_white.png",
+      "source": "news-detail: https://kaldiart.com/news/4-were-live-meet-kaldi-art/",
+      "status": "downloaded",
+      "size": 13926
+    },
+    {
+      "filename": "kaldi-1x1_blue_7.png",
+      "url": "https://static-assets.artlogic.net/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/images/4/kaldi-1x1_blue.png",
+      "source": "news-detail: https://kaldiart.com/news/4-were-live-meet-kaldi-art/",
+      "status": "downloaded",
+      "size": 13908
+    },
+    {
+      "filename": "kaldi-1x1_white_5.png",
+      "url": "https://static-assets.artlogic.net/w_100,h_100,c_fill,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/images/4/kaldi-1x1_white.png",
+      "source": "news-detail: https://kaldiart.com/news/4-were-live-meet-kaldi-art/ [bg]",
+      "status": "downloaded",
+      "size": 842
+    },
+    {
+      "filename": "kaldi-1x1_blue_8.png",
+      "url": "https://static-assets.artlogic.net/w_100,h_100,c_fill,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/news/images/4/kaldi-1x1_blue.png",
+      "source": "news-detail: https://kaldiart.com/news/4-were-live-meet-kaldi-art/ [bg]",
+      "status": "downloaded",
+      "size": 828
+    },
+    {
+      "filename": "ubs_5.png",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/70/709e730f01814308a30eda16bd5cfc3b/ubs.png",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 32922
+    },
+    {
+      "filename": "arco-2026_5.jpeg",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/6f/6f0c2da03fe54fd59d4609271fc07f11/arco-2026.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 33138
+    },
+    {
+      "filename": "arco-madrid_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/arco-madrid.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 543693
+    },
+    {
+      "filename": "photo_2026-03-10_20-02-24_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/photo_2026-03-10_20-02-24.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 90788
+    },
+    {
+      "filename": "gallery_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/gallery.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 496425
+    },
+    {
+      "filename": "photo_2026-03-10_20-02-29_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/photo_2026-03-10_20-02-29.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 149242
+    },
+    {
+      "filename": "studio-visit_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/studio-visit.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 394530
+    },
+    {
+      "filename": "courtesy-of-art-basel-2_4.jpg",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/08/0890c70a819e465c93d34184a913c63e/courtesy-of-art-basel-2.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 65572
+    },
+    {
+      "filename": "courtesy-of-art-basel-1_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/courtesy-of-art-basel-1.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 110180
+    },
+    {
+      "filename": "courtesy-of-art-basel-3_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/courtesy-of-art-basel-3.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 111022
+    },
+    {
+      "filename": "viennacontemporary-_4.png",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/a8/a8ec611049bd4d1d9d0b490f0dacbcdd/viennacontemporary-.png",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 78578
+    },
+    {
+      "filename": "frieze-seoul-2025_dezeen_2364_col_0_2.jpg",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/2e/2ea32c3931f344c89ab683ad0d60b5c2/frieze-seoul-2025_dezeen_2364_col_0.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 86904
+    },
+    {
+      "filename": "waking-visions_installation-view_1_credit-samurai-museum-berlin_2.jpg",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/6b/6b54ea4bc8224e708db1767b01781bd3/waking-visions_installation-view_1_credit-samurai-museum-berlin.jpg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 102118
+    },
+    {
+      "filename": "lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023_2.jpeg",
+      "url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/blog_entries/main_image/items/a0/a029d5b9fa254fd5b0a9b537bd315d39/lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 61398
+    },
+    {
+      "filename": "lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023-jacopo-la-forgia-_2.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023-jacopo-la-forgia-.jpeg",
+      "source": "blog",
+      "status": "downloaded",
+      "size": 788602
+    },
+    {
+      "filename": "381205d8534e35ab0631223212e6ec13173b9403.jpg",
+      "url": "https://captcha.artlogic.net/usr/captcha_images/381205d8534e35ab0631223212e6ec13173b9403.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/35-insights-i-global-art-market-2026/",
+      "status": "downloaded",
+      "size": 4839
+    },
+    {
+      "filename": "2c138926bf8123c497cbc4f8a5ca8ed6de7cfb1c.jpg",
+      "url": "https://captcha.artlogic.net/usr/captcha_images/2c138926bf8123c497cbc4f8a5ca8ed6de7cfb1c.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/34-fair-diary-i-arco-madrid-2026-from-latin-america-to-europe/",
+      "status": "downloaded",
+      "size": 3943
+    },
+    {
+      "filename": "c72f979571ad91d5b4691a517d467713108903ed.jpg",
+      "url": "https://captcha.artlogic.net/usr/captcha_images/c72f979571ad91d5b4691a517d467713108903ed.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/32-insights-i-three-fairs-three-futures-doha-mexico-city-new-delhi/",
+      "status": "downloaded",
+      "size": 3558
+    },
+    {
+      "filename": "d5e41a170e85500166812cfe406ee641b5098370.jpg",
+      "url": "https://captcha.artlogic.net/usr/captcha_images/d5e41a170e85500166812cfe406ee641b5098370.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/31-insights-i-global-art-fairs-enter-a-structural-signals-from-spark-viennacontemporary-adaa-and-taipei-dangdai/",
+      "status": "downloaded",
+      "size": 4155
+    },
+    {
+      "filename": "frieze-week-magazine-seoul-2025-cover_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/frieze-week-magazine-seoul-2025-cover.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/30-fair-diary-i-frieze-seoul-2025-korea-in-focus-galleries-collectors-and-market-insights/",
+      "status": "downloaded",
+      "size": 378706
+    },
+    {
+      "filename": "screenshot-2025-09-29-at-20.19.37_2.png",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/screenshot-2025-09-29-at-20.19.37.png",
+      "source": "blog-detail: https://kaldiart.com/blog/30-fair-diary-i-frieze-seoul-2025-korea-in-focus-galleries-collectors-and-market-insights/",
+      "status": "downloaded",
+      "size": 12254
+    },
+    {
+      "filename": "frieze_seoul_2025-11_2.jpg",
+      "url": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/library/main/images/frieze_seoul_2025-11.jpg",
+      "source": "blog-detail: https://kaldiart.com/blog/30-fair-diary-i-frieze-seoul-2025-korea-in-focus-galleries-collectors-and-market-insights/",
+      "status": "downloaded",
+      "size": 77234
+    },
+    {
+      "filename": "lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023-jacopo-la-forgia.jpeg",
+      "url": "https://kaldiart.com/usr/library/main/images/lee-ufan-hamburger-bahnhof-nationalgalerie-der-gegenwart-2023-2024-lee-ufan.-courtesy-of-studio-lee-ufan-vg-bild-kunst-bonn-2023-jacopo-la-forgia.jpeg",
+      "source": "blog-detail: https://kaldiart.com/blog/28-art-review-i-lee-ufan-at-hamburger-bahnhof-art-reviews/",
+      "status": "downloaded",
+      "size": 635606
+    }
+  ]
+}

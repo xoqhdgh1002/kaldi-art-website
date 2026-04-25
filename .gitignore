@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.env
+
+# Dependencies
+node_modules/
+
+# Dev/debug artifacts
+screenshots/
+preview_*.png
+scroll_*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

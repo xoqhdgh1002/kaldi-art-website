@@ -1,0 +1,224 @@
+{
+  "artists": {
+    "loggedIn": false,
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/artists",
+    "bodyText": "THIS PAGE IS PROTECTED\nWrong username and password combination.\nSUBMIT\nBACK TO HOMEPAGE",
+    "images": [],
+    "links": [
+      {
+        "text": "Submit",
+        "href": "https://kaldiart.com/artists#"
+      },
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      },
+      {
+        "text": "Previous",
+        "href": "https://kaldiart.com/artists#"
+      },
+      {
+        "text": "Next",
+        "href": "https://kaldiart.com/artists#"
+      }
+    ],
+    "structured": {
+      "This page is protected": "Wrong username and password combination."
+    }
+  },
+  "projects": {
+    "loggedIn": false,
+    "title": "Login required | KALDI ART",
+    "url": "https://kaldiart.com/exhibitions",
+    "bodyText": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nWrong username and password combination.\nSUBMIT\nBACK TO HOMEPAGE",
+    "images": [],
+    "links": [
+      {
+        "text": "Submit",
+        "href": "https://kaldiart.com/exhibitions#"
+      },
+      {
+        "text": "Back to homepage",
+        "href": "https://kaldiart.com/"
+      },
+      {
+        "text": "Previous",
+        "href": "https://kaldiart.com/exhibitions#"
+      },
+      {
+        "text": "Next",
+        "href": "https://kaldiart.com/exhibitions#"
+      }
+    ],
+    "structured": {
+      "Confirm Your Access Request to KALDI ART Projects": "To access our Selected Projects archive — please verify your email.\nThis step ensures a secure and professional experience for all users."
+    }
+  },
+  "artistDetails": [
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/artists",
+      "bodyText": "THIS PAGE IS PROTECTED\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/artists#"
+        }
+      ],
+      "structured": {
+        "This page is protected": "Username\n                            \n                            \n                        \n                    \n                        Password\n                        \n                    \n                    \n                    \n                        Submit\n                            Back to homepage"
+      }
+    },
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/artists#",
+      "bodyText": "THIS PAGE IS PROTECTED\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/artists#"
+        }
+      ],
+      "structured": {
+        "This page is protected": "Username\n                            \n                            \n                        \n                    \n                        Password\n                        \n                    \n                    \n                    \n                        Submit\n                            Back to homepage"
+      }
+    },
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/artists#",
+      "bodyText": "THIS PAGE IS PROTECTED\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/artists#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/artists#"
+        }
+      ],
+      "structured": {
+        "This page is protected": "Username\n                            \n                            \n                        \n                    \n                        Password\n                        \n                    \n                    \n                    \n                        Submit\n                            Back to homepage"
+      }
+    }
+  ],
+  "projectDetails": [
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/exhibitions",
+      "bodyText": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/exhibitions#"
+        }
+      ],
+      "structured": {
+        "Confirm Your Access Request to KALDI ART Projects": "To access our Selected Projects archive — please verify your email.\nThis step ensures a secure and professional experience for all users."
+      }
+    },
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/exhibitions#",
+      "bodyText": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/exhibitions#"
+        }
+      ],
+      "structured": {
+        "Confirm Your Access Request to KALDI ART Projects": "To access our Selected Projects archive — please verify your email.\nThis step ensures a secure and professional experience for all users."
+      }
+    },
+    {
+      "title": "Login required | KALDI ART",
+      "url": "https://kaldiart.com/exhibitions#",
+      "bodyText": "CONFIRM YOUR ACCESS REQUEST TO KALDI ART PROJECTS\n\nTo access our Selected Projects archive — please verify your email.\n\nThis step ensures a secure and professional experience for all users.\n\n\n\nSUBMIT\nBACK TO HOMEPAGE",
+      "images": [],
+      "links": [
+        {
+          "text": "Submit",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Back to homepage",
+          "href": "https://kaldiart.com/"
+        },
+        {
+          "text": "Previous",
+          "href": "https://kaldiart.com/exhibitions#"
+        },
+        {
+          "text": "Next",
+          "href": "https://kaldiart.com/exhibitions#"
+        }
+      ],
+      "structured": {
+        "Confirm Your Access Request to KALDI ART Projects": "To access our Selected Projects archive — please verify your email.\nThis step ensures a secure and professional experience for all users."
+      }
+    }
+  ]
+}

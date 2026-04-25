@@ -1,0 +1,3065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALDI ART — Korean Contemporary Art Advisory</title>
+  <meta name="description" content="Korean contemporary art advisory and editorial platform. Bridging Seoul, Berlin and the global art world." />
+
+  <!-- Open Graph (카카오, 페이스북, 텔레그램, 슬랙 등) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KALDI ART" />
+  <meta property="og:title" content="KALDI ART — Korean Contemporary Art Advisory" />
+  <meta property="og:description" content="Korean contemporary art advisory and editorial platform. Bridging Seoul, Berlin and the global art world." />
+  <meta property="og:url" content="https://kaldi-art.pages.dev" />
+  <meta property="og:image" content="https://kaldi-art.pages.dev/assets/images/scraped/lb4-museum-san.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KALDI ART — Korean Contemporary Art Advisory" />
+  <meta name="twitter:description" content="Korean contemporary art advisory and editorial platform. Bridging Seoul, Berlin and the global art world." />
+  <meta name="twitter:image" content="https://kaldi-art.pages.dev/assets/images/scraped/lb4-museum-san.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #0d1b2a;
+      --navy-light: #1e3048;
+      --white: #ffffff;
+      --off-white: #f8f7f5;
+      --border: #e5e3df;
+      --text-muted: #8a8680;
+      --accent: #0d1b2a;
+      --transition: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      /* ── Rethink Sans 타입 스케일 ─────────────────────────
+         Label  : 10px / 400 / 0.12em / UPPERCASE
+         Caption: 11px / 400 / 0
+         Body   : 13px / 400 / 0
+         Name   : 15px / 400 / -0.01em  (아티스트·저널·프로젝트 이름)
+         Sub    : 20px / 500 / -0.02em  (서비스명·폼 제목)
+         Section: clamp(26px,2.8vw,38px) / 500 / -0.02em
+         Hero   : clamp(24px,3vw,42px)   / 400 / -0.02em
+      ────────────────────────────────────────────────── */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Rethink Sans', sans-serif;
+      background: var(--white);
+      color: var(--navy);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .nav-inner {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      cursor: pointer;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+      text-decoration: none;
+      text-transform: uppercase;
+      opacity: 0.65;
+      transition: opacity var(--transition);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      opacity: 1;
+    }
+
+    .nav-links a.active {
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 1px;
+    }
+
+    /* hamburger */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--navy);
+      transition: var(--transition);
+    }
+
+    /* mobile nav drawer */
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: 56px; left: 0; right: 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 40px 32px;
+      z-index: 99;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      color: var(--navy);
+      text-decoration: none;
+      text-transform: uppercase;
+      opacity: 0.72;
+      cursor: pointer;
+    }
+    .nav-drawer a:hover { opacity: 1; }
+
+    /* ─── PAGE WRAPPER ─── */
+    #app {
+      padding-top: 56px;
+      min-height: 100vh;
+    }
+
+    .page {
+      display: none;
+      animation: fadeIn 220ms ease forwards;
+    }
+    .page.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ─── SHARED ─── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .page-header {
+      padding: 80px 40px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-title {
+      font-size: clamp(32px, 3.4vw, 46px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--navy);
+    }
+
+    /* 모든 레이블 / 카테고리 태그 공통 규칙 */
+    .section-label,
+    .hero-category,
+    .signal-issue,
+    .project-tag,
+    .service-number,
+    .ov-section-tag,
+    .ov-advisory-num,
+    .journal-category,
+    .ov-journal-cat {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .section-label { margin-bottom: 12px; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─── HOME ─── */
+    .hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    /* ── Hero Slideshow ── */
+    .hero-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.9s cubic-bezier(0.77, 0, 0.18, 1);
+      will-change: transform;
+    }
+
+    .hero-slide {
+      flex: 0 0 100%;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .hero-slide-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.04);
+      transition: transform 6s ease;
+    }
+
+    .hero-slide.is-active .hero-slide-bg {
+      transform: scale(1);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,0.72) 0%, transparent 55%);
+    }
+
+    .hero-content {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      color: #fff;
+    }
+
+    .hero-category {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 10px;
+    }
+
+    .hero-headline {
+      font-size: clamp(29px, 3.6vw, 51px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      max-width: 560px;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.6;
+      margin-top: 10px;
+      letter-spacing: 0.03em;
+    }
+
+    /* 텍스트 페이드 */
+    .hero-slide .hero-content {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.7s ease 0.4s, transform 0.7s ease 0.4s;
+    }
+    .hero-slide.is-active .hero-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 도트 인디케이터 */
+    .hero-dots {
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    .hero-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .hero-dot.active {
+      background: #fff;
+      transform: scale(1.3);
+    }
+
+    /* 진행 바 */
+    .hero-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: rgba(255,255,255,0.6);
+      width: 0%;
+      transition: width linear;
+      z-index: 10;
+    }
+
+    /* ─── HOME OVERVIEW ─── */
+    .home-sections {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* 공통 섹션 행 — 스크롤 애니메이션 초기 상태 */
+    .ov-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 52px 0;
+      border-bottom: 1px solid var(--border);
+      /* 초기 상태: 아래에서 대기 */
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* 화면 안으로 진입 */
+    .ov-row.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 화면 위로 지나감 */
+    .ov-row.is-past {
+      opacity: 0;
+      transform: translateY(-12px);
+      transition: opacity 0.4s ease-in,
+                  transform 0.4s ease-in;
+    }
+
+    /* 행 전체 클릭 가능 */
+    .ov-row[onclick] {
+      cursor: pointer;
+    }
+    .ov-row[onclick]:hover {
+      background: rgba(13, 27, 42, 0.018);
+    }
+    .ov-row[onclick]:hover .ov-section-tag {
+      color: var(--navy);
+    }
+
+    /* 라벨 컬럼: 본문보다 살짝 늦게 나타남 */
+    .ov-row.is-visible .ov-body { transition-delay: 0.08s; }
+
+    /* 사라질 때는 즉각 반응 (delay 없음) */
+    .ov-row.is-past .ov-label-col,
+    .ov-row.is-past .ov-body { transition-delay: 0s; }
+
+    .ov-label-col {
+      padding-top: 3px;
+    }
+
+    .ov-section-tag {
+      cursor: pointer;
+      transition: color var(--transition);
+    }
+    .ov-section-tag:hover { color: var(--navy); }
+
+    .ov-body {}
+
+    .ov-headline {
+      font-size: clamp(24px, 2.6vw, 36px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .ov-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: var(--text-muted);
+      max-width: 580px;
+    }
+
+    .ov-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 2px;
+      cursor: pointer;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 80px;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-brand {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    .footer-col {
+      min-width: 120px;
+    }
+
+    .footer-col-label {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .footer-col-content {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .footer-col-content a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color var(--transition);
+      display: block;
+    }
+    .footer-col-content a:hover { color: var(--navy); }
+    .footer-col-content a.ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      line-height: 1;
+    }
+    .footer-col-content a.ig-link svg {
+      width: 17px; height: 17px;
+      fill: none; stroke: currentColor;
+      stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* ─── HOME: 미니 그리드 (Signal, Projects, Artists) ─── */
+    .ov-signal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .ov-signal-card {
+      cursor: pointer;
+    }
+
+    .ov-signal-card-img {
+      width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .ov-signal-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+    }
+    .ov-signal-card:hover img { transform: scale(1.04); }
+
+    .ov-signal-card-title {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* projects 2열 */
+    .ov-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .ov-project-card {
+      cursor: pointer;
+    }
+
+    .ov-project-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .ov-project-img div {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 500ms ease;
+    }
+    .ov-project-card:hover .ov-project-img div { transform: scale(1.03); }
+
+    .ov-project-name {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-bottom: 3px;
+      line-height: 1.35;
+    }
+
+    .ov-project-meta {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* artists 목록 */
+    .ov-artists-list {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+
+    .ov-artist-row {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      transition: opacity var(--transition);
+    }
+    .ov-artist-row:hover { opacity: 0.55; }
+
+    .ov-artist-name {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    .ov-artist-meta {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* journal 목록 */
+    .ov-journal-list {
+      margin-top: 20px;
+    }
+
+    .ov-journal-row {
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      gap: 24px;
+      align-items: baseline;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: opacity var(--transition);
+    }
+    .ov-journal-row:hover { opacity: 0.55; }
+
+    .ov-journal-date {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .ov-journal-title {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    .ov-journal-cat {
+      white-space: nowrap;
+    }
+
+    /* advisory 3열 미니 */
+    .ov-advisory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 20px;
+    }
+
+    .ov-advisory-item {}
+
+    .ov-advisory-num {
+      margin-bottom: 8px;
+    }
+
+    .ov-advisory-name {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .ov-advisory-desc {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ─── ADVISORY ─── */
+    .advisory-intro {
+      padding: 80px 40px 64px;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .advisory-tagline {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-top: 28px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1200px;
+      margin: 64px auto;
+      padding: 0 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .service-card {
+      padding: 48px 40px 48px 0;
+      border-right: 1px solid var(--border);
+    }
+
+    .service-card:last-child {
+      border-right: none;
+    }
+
+    /* 2×2 grid variant for Advisory page */
+    .services-grid.grid-2 .service-card:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+    .services-grid.grid-2 .service-card:nth-child(2n) { border-right: none; }
+    /* 왼쪽 열(홀수번째) 패딩 리셋 — :not(:first-child) 오버라이드 */
+    .services-grid.grid-2 .service-card:nth-child(2n-1) { padding-left: 0; }
+
+    .service-card:not(:first-child) {
+      padding-left: 40px;
+    }
+
+    .service-number {
+      margin-bottom: 24px;
+    }
+
+    .service-name {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .service-desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    .advisory-closing {
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      padding: 0 40px;
+    }
+
+    .advisory-closing p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.85;
+      color: var(--text-muted);
+      max-width: 640px;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 2px;
+      cursor: pointer;
+    }
+
+    /* ─── PROJECTS ─── */
+    .projects-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 40px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-keyword {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+    }
+
+    .projects-categories-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding-bottom: 80px;
+    }
+
+    .projects-category-label {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2px;
+    }
+
+    /* ─── ARTISTS ─── */
+    .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .artist-card {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      cursor: pointer;
+      background: #1c1c1c;
+    }
+
+    .artist-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: filter 320ms ease, transform 320ms ease;
+    }
+
+    .artist-card:hover .artist-card-img {
+      filter: blur(5px) brightness(0.55);
+      transform: scale(1.04);
+    }
+
+    .artist-card-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 280ms ease;
+    }
+
+    .artist-card:hover .artist-card-overlay,
+    .artist-card--noimg .artist-card-overlay {
+      opacity: 1;
+    }
+
+    .artist-card-name {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .artist-card-meta {
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.05em;
+      margin-top: 5px;
+    }
+
+    /* 이미지 없는 카드: 항상 이름 표시, 미묘한 배경 */
+    .artist-card--noimg {
+      background: #222;
+    }
+    .artist-card--noimg .artist-card-name {
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* ─── ARTISTS / PROJECTS BLUR GATE ─── */
+    .artists-gate,
+    .projects-gate {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 56px 40px 80px;
+    }
+
+    /* 블러 대상 — grid를 감싸는 래퍼 */
+    .artists-gate-content {
+      transition: filter 0.5s ease, opacity 0.5s ease;
+    }
+    .artists-gate-content.blurred {
+      filter: blur(22px);
+      opacity: 0.35;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* 잠금 오버레이 — 뷰포트 고정 (내비게이션 아래) */
+    .artists-lock {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+      pointer-events: auto;
+    }
+    .artists-lock.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .artists-lock-icon {
+      font-size: 24px;
+      letter-spacing: 0.15em;
+      color: var(--navy);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .artists-lock-label {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.8;
+    }
+    .artists-lock-btn {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--navy);
+      transition: opacity 0.2s;
+    }
+    .artists-lock-btn:hover { opacity: 0.5; }
+
+    /* 비밀번호 모달 */
+    .auth-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .auth-modal-backdrop.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .auth-modal {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 52px 56px 48px;
+      width: 360px;
+      max-width: calc(100vw - 48px);
+    }
+    .auth-modal-title {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .auth-modal-sub {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .auth-modal-field {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--navy);
+      padding: 8px 0;
+      background: transparent;
+      outline: none;
+      letter-spacing: 0.06em;
+      margin-bottom: 32px;
+      display: block;
+      transition: border-color 0.2s;
+    }
+    .auth-modal-field:focus { border-color: var(--navy); }
+    .auth-modal-error {
+      font-size: 12px;
+      font-weight: 400;
+      color: #b00;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: -24px;
+      margin-bottom: 20px;
+      min-height: 16px;
+      transition: opacity 0.2s;
+    }
+    .auth-modal-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .auth-modal-submit {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      border: none;
+      border-bottom: 1px solid var(--navy);
+      background: none;
+      cursor: pointer;
+      padding: 6px 0;
+      transition: opacity 0.2s;
+    }
+    .auth-modal-submit:hover { opacity: 0.5; }
+    .auth-modal-cancel {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: none;
+      border: none;
+      transition: opacity 0.2s;
+    }
+    .auth-modal-cancel:hover { opacity: 0.5; }
+
+    /* ─── PRIVATE SALES ─── */
+    .private-intro {
+      padding: 80px 40px 64px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .private-text p {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.9;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .private-form {
+      padding: 80px 40px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .form-title {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-bottom: 48px;
+    }
+
+    .form-field {
+      margin-bottom: 36px;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+      max-width: 480px;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--navy);
+      padding: 8px 0 12px;
+      outline: none;
+      transition: border-color var(--transition);
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-bottom-color: var(--navy);
+    }
+
+    .form-field textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-submit {
+      background: none;
+      border: none;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--navy);
+      cursor: pointer;
+      padding: 0;
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 3px;
+      transition: opacity var(--transition);
+    }
+
+    .form-submit:hover { opacity: 0.6; }
+
+    /* ─── SIGNAL ─── */
+    .signal-intro {
+      padding: 64px 40px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .signal-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .signal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 56px auto 80px;
+      padding: 0 40px;
+    }
+
+    .signal-card {
+      cursor: pointer;
+    }
+
+    .signal-card-image {
+      width: 100%;
+      aspect-ratio: 1;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .signal-card-bg {
+      width: 100%;
+      height: 100%;
+      transition: transform 500ms ease;
+    }
+
+    .signal-card:hover .signal-card-bg {
+      transform: scale(1.04);
+    }
+
+    .signal-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,0.7) 0%, transparent 55%);
+    }
+
+    .signal-card-text {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      color: #fff;
+    }
+
+    .signal-issue {
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+
+    .signal-card-headline {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.3;
+    }
+
+    .signal-card-meta {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* ─── NEWSLETTER INLINE SUBSCRIBE ─── */
+    .subscribe-inline {
+      grid-column: 1 / -1;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 44px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .subscribe-inline-text .subscribe-label {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .subscribe-inline-text .subscribe-headline {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+    }
+
+    .subscribe-form {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 4px;
+      flex-shrink: 0;
+    }
+
+    .subscribe-input {
+      border: none;
+      outline: none;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--navy);
+      background: transparent;
+      width: 260px;
+      padding: 4px 0;
+    }
+
+    .subscribe-input::placeholder { color: var(--text-muted); }
+
+    .subscribe-btn {
+      border: none;
+      background: none;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      cursor: pointer;
+      padding: 4px 0 4px 20px;
+      white-space: nowrap;
+      transition: opacity var(--transition);
+    }
+    .subscribe-btn:hover { opacity: 0.5; }
+
+    .subscribe-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      letter-spacing: 0.03em;
+    }
+
+    /* Journal 페이지 내 인라인 subscribe (단일 컬럼) */
+    .journal-subscribe {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    /* ─── JOURNAL ─── */
+    .journal-list {
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      padding: 0 40px;
+    }
+
+    .journal-item {
+      display: grid;
+      grid-template-columns: 100px 1fr auto;
+      gap: 32px;
+      align-items: baseline;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: opacity var(--transition);
+    }
+
+    .journal-item:hover { opacity: 0.65; }
+
+    .journal-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .journal-title {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      line-height: 1.45;
+    }
+
+    .journal-category {
+      white-space: nowrap;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-body {
+      max-width: 1200px;
+      margin: 64px auto 80px;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.85;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      max-width: 580px;
+    }
+
+    .about-text p:first-of-type {
+      font-size: 18px;
+      color: var(--navy);
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .about-sidebar {}
+
+    .sidebar-block {
+      margin-bottom: 48px;
+    }
+
+    .sidebar-label {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-content {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--navy);
+      line-height: 1.8;
+    }
+
+    .sidebar-content a {
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: border-color var(--transition);
+    }
+
+    .sidebar-content a:hover { border-color: var(--navy); }
+
+    .sidebar-content a.ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .sidebar-content a.ig-link svg {
+      width: 17px; height: 17px;
+      fill: none; stroke: currentColor;
+      stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+
+    /* ─── SIGNAL card images ─── */
+    .bg-s1 { background-image: url('assets/images/card_cover.png'); background-size: cover; background-position: center; }
+    .bg-s2 { background-image: url('assets/images/card_2.png'); background-size: cover; background-position: center; }
+    .bg-s3 { background-image: url('assets/images/card_4.png'); background-size: cover; background-position: center; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: 1fr; border-top: none; }
+      .service-card { padding: 40px 0; border-right: none; border-bottom: 1px solid var(--border); }
+      .service-card:last-child { border-bottom: none; }
+      .service-card:not(:first-child) { padding-left: 0; }
+      .about-body { grid-template-columns: 1fr; gap: 56px; }
+      .private-intro { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .container,
+      .page-header,
+      .home-sections,
+      .artists-gate,
+      .projects-gate,
+      .signal-grid,
+      .journal-list,
+      .about-body,
+      .private-intro,
+      .private-form,
+      .advisory-intro,
+      .services-grid,
+      .advisory-closing,
+      .signal-intro { padding-left: 20px; padding-right: 20px; }
+
+      /* HOME */
+      .ov-row { grid-template-columns: 1fr; gap: 12px; padding: 36px 0; }
+      .ov-headline { font-size: 22px; }
+      .ov-signal-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .ov-advisory-grid { grid-template-columns: 1fr; gap: 20px; }
+      .ov-artists-list { grid-template-columns: 1fr; }
+      .ov-journal-row { grid-template-columns: 1fr; gap: 4px; }
+      .ov-journal-cat { display: none; }
+      .ov-projects-grid { grid-template-columns: 1fr; }
+      .subscribe-inline { flex-direction: column; gap: 24px; align-items: flex-start; }
+      .subscribe-form { width: 100%; }
+      .subscribe-input { width: 100%; }
+
+      /* HERO */
+      .hero { aspect-ratio: 4/3; }
+      .hero-content { left: 20px; bottom: 24px; right: 20px; }
+      .hero-headline { font-size: 26px; max-width: 100%; }
+      .hero-dots { right: 20px; }
+
+      /* PAGES */
+      .page-header { padding: 48px 20px 40px; }
+      .page-title { font-size: 32px; }
+
+      /* PROJECTS */
+      .projects-keywords { padding: 0 20px 36px; }
+      .projects-categories-wrap { gap: 40px; }
+
+      /* ARTISTS */
+      .artists-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+
+      /* SIGNAL */
+      .signal-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .signal-card-headline { font-size: 15px; }
+
+      /* JOURNAL */
+      .journal-item { grid-template-columns: 1fr; gap: 6px; padding: 24px 0; }
+      .journal-category { display: none; }
+      .journal-subscribe { flex-direction: column; gap: 20px; align-items: flex-start; }
+
+      /* ADVISORY */
+      .services-grid.grid-2 { grid-template-columns: 1fr; }
+      .services-grid.grid-2 .service-card:nth-child(-n+2) { border-bottom: none; }
+      .services-grid.grid-2 .service-card { border-bottom: 1px solid var(--border); border-right: none; }
+      .services-grid.grid-2 .service-card:last-child { border-bottom: none; }
+
+      /* PRIVATE SALES */
+      .private-intro { padding: 48px 20px 40px; }
+      .form-field input, .form-field textarea { max-width: 100%; }
+
+      /* ABOUT */
+      .about-body { grid-template-columns: 1fr; gap: 40px; padding-bottom: 60px; }
+
+      /* DETAIL */
+      .detail-header, .detail-body, .detail-back { padding-left: 20px; padding-right: 20px; }
+      .detail-hero { aspect-ratio: 4/3; margin-top: 20px; }
+      .detail-body p, .detail-body li { font-size: 16px; }
+
+      /* FOOTER */
+      footer { padding: 32px 20px; flex-direction: column; gap: 28px; align-items: flex-start; }
+    }
+
+    @media (max-width: 480px) {
+      .signal-grid { grid-template-columns: 1fr; }
+      .artists-grid { grid-template-columns: repeat(2, 1fr); }
+      .ov-signal-grid { grid-template-columns: 1fr 1fr; gap: 10px; } /* 홈 signal은 모바일에서도 2×2 유지 */
+      .hero-headline { font-size: 22px; }
+      .subscribe-form { flex-direction: column; gap: 12px; align-items: flex-start; }
+    }
+
+    /* ─── DETAIL PAGE ─── */
+    .detail-back {
+      padding: 28px 40px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .detail-back-btn {
+      background: none;
+      border: none;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0;
+      transition: color var(--transition);
+    }
+    .detail-back-btn:hover { color: var(--navy); }
+
+    .detail-hero {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      background: var(--navy);
+      background-size: cover;
+      background-position: center;
+      margin-top: 32px;
+    }
+
+    .detail-header {
+      max-width: 720px;
+      margin: 48px auto 0;
+      padding: 0 40px;
+    }
+
+    .detail-label {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .detail-title {
+      font-size: clamp(27px, 3.6vw, 48px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .detail-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      padding-bottom: 32px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-body {
+      max-width: 720px;
+      margin: 0 auto 80px;
+      padding: 0 40px;
+    }
+
+    .detail-body p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+
+    .detail-body h2 {
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 48px 0 16px;
+      line-height: 1.3;
+    }
+
+    .detail-body h3 {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 36px 0 12px;
+    }
+
+    .detail-body .detail-h4 {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 28px 0 10px;
+    }
+
+    .detail-body ul,
+    .detail-body ol {
+      margin: 0 0 24px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .detail-body li {
+      font-size: 18px;
+      line-height: 1.75;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .detail-body ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--navy);
+    }
+    .detail-body ol {
+      counter-reset: ol-counter;
+    }
+    .detail-body ol li {
+      counter-increment: ol-counter;
+    }
+    .detail-body ol li::before {
+      content: counter(ol-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .detail-body .detail-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      margin: 40px 0 8px;
+      background: var(--border);
+    }
+
+    .detail-table-wrap {
+      overflow-x: auto;
+      margin: 32px 0 24px;
+    }
+    .detail-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+    .detail-table th {
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: left;
+      padding: 10px 16px 10px 0;
+      border-bottom: 2px solid var(--border);
+    }
+    .detail-table td {
+      padding: 12px 16px 12px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--navy);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .detail-table tr:last-child td { border-bottom: none; }
+
+    .detail-body .detail-figure {
+      margin: 40px 0 32px;
+    }
+    .detail-body .detail-figure .detail-img {
+      margin: 0 0 8px;
+    }
+    .detail-body .detail-img-caption {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .detail-header, .detail-body, .detail-back { padding-left: 24px; padding-right: 24px; }
+      .detail-hero { aspect-ratio: 4/3; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════ NAVIGATION ════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" onclick="navigate('home')">KALDI ART</a>
+    <ul class="nav-links">
+      <li><a onclick="navigate('advisory')" data-page="advisory">Advisory</a></li>
+      <li><a onclick="navigate('projects')" data-page="projects">Projects</a></li>
+      <li><a onclick="navigate('artists')" data-page="artists">Artists</a></li>
+      <li><a onclick="navigate('private-sales')" data-page="private-sales">Private Sales</a></li>
+      <li><a onclick="navigate('signal')" data-page="signal">Signal</a></li>
+      <li><a onclick="navigate('journal')" data-page="journal">Journal</a></li>
+      <li><a onclick="navigate('about')" data-page="about">About</a></li>
+    </ul>
+    <div class="nav-hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- mobile drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <a onclick="navigate('advisory'); toggleMenu()">Advisory</a>
+  <a onclick="navigate('projects'); toggleMenu()">Projects</a>
+  <a onclick="navigate('artists'); toggleMenu()">Artists</a>
+  <a onclick="navigate('private-sales'); toggleMenu()">Private Sales</a>
+  <a onclick="navigate('signal'); toggleMenu()">Signal</a>
+  <a onclick="navigate('journal'); toggleMenu()">Journal</a>
+  <a onclick="navigate('about'); toggleMenu()">About</a>
+</div>
+
+<!-- ════ APP ════ -->
+<div id="app">
+
+  <!-- ── HOME ── -->
+  <section class="page active" id="page-home">
+
+    <!-- HERO SLIDESHOW -->
+    <div class="hero" id="heroSlider">
+      <div class="hero-track" id="heroTrack">
+
+        <!-- Slide 1 -->
+        <div class="hero-slide is-active" style="cursor:pointer;" onclick="showDetail('signal','21-lee-bae-en-attendant-waiting-wonju')">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/scraped/lb4-museum-san.jpeg'); background-position: center 40%;"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-category">Signal — WONJU · Apr 2026</div>
+            <div class="hero-headline">Lee Bae –<br>En Attendant:<br>Waiting</div>
+            <div class="hero-sub">Museum SAN · Apr 7 – Dec 13, 2026</div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="cursor:pointer;" onclick="showDetail('signal','20-centre-pompidou-opening-this-june-seoul')">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/scraped/11.jpeg'); background-position: center 30%;"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-category">Signal — SEOUL · Apr 2026</div>
+            <div class="hero-headline">Centre Pompidou<br>Opening<br>This June</div>
+            <div class="hero-sub">Seoul · June 2026</div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="cursor:pointer;" onclick="showDetail('journal','30-fair-diary-i-frieze-seoul-2025-korea-in-focus-galleries-collectors-and-market-insights')">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/scraped/frieze-seoul-2025_dezeen_2364_col_0.jpg'); background-position: center 35%;"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-category">Journal — Fair Diary · Sep 2025</div>
+            <div class="hero-headline">Frieze Seoul<br>2025 —<br>Korea in Focus</div>
+            <div class="hero-sub">Galleries, collectors, and market insights</div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero-slide" style="cursor:pointer;" onclick="showDetail('signal','8-berlin-galleries-expand-to-seoul-amid-a-rising-berlin-seoul')">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/scraped/berlin-meets-seoul_2747-cropped.jpg'); background-position: center;"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-category">Signal — BERLIN – SEOUL · Jun 2025</div>
+            <div class="hero-headline">Berlin Galleries<br>Expand to Seoul</div>
+            <div class="hero-sub">Amid a Rising Asian Art Market</div>
+          </div>
+        </div>
+
+      </div><!-- /.hero-track -->
+
+      <!-- 도트 -->
+      <div class="hero-dots" id="heroDots">
+        <span class="hero-dot active"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+      </div>
+
+      <!-- 진행 바 -->
+      <div class="hero-progress" id="heroProgress"></div>
+    </div>
+
+    <div class="home-sections">
+
+      <!-- ① SIGNAL -->
+      <div class="ov-row" onclick="navigate('signal')">
+        <div class="ov-label-col">
+          <div class="ov-section-tag" onclick="navigate('signal')">Signal</div>
+        </div>
+        <div class="ov-body">
+          <div class="ov-headline">Korean Art.<br>Global Perspective.</div>
+          <p class="ov-text">Our editorial series on Korean contemporary art — from Dansaekhwa to the next generation, across Paris, New York, Venice, and Seoul.</p>
+          <div id="homeSignalGrid" class="ov-signal-grid">
+            <!-- JS로 동적 렌더링 -->
+            <div class="ov-signal-card" onclick="event.stopPropagation();showDetail('signal','21-lee-bae-en-attendant-waiting-wonju')">
+              <div class="ov-signal-card-img">
+                <img src="assets/images/scraped/lb4-museum-san.jpeg" alt="Lee Bae" onerror="this.parentElement.style.background='#1a1a1a'" />
+              </div>
+              <div class="ov-signal-card-title">Lee Bae – En Attendant: Waiting · Museum SAN</div>
+            </div>
+            <div class="ov-signal-card" onclick="event.stopPropagation();showDetail('signal','20-centre-pompidou-opening-this-june-seoul')">
+              <div class="ov-signal-card-img">
+                <img src="assets/images/scraped/11.jpeg" alt="Centre Pompidou" onerror="this.parentElement.style.background='#1a1a1a'" />
+              </div>
+              <div class="ov-signal-card-title">Centre Pompidou Opening This June · Seoul</div>
+            </div>
+            <div class="ov-signal-card" onclick="event.stopPropagation();showDetail('signal','18-art-basel-hong-kong-2026-hong-kong')">
+              <div class="ov-signal-card-img">
+                <img src="assets/images/scraped/cover.png" alt="Art Basel HK" onerror="this.parentElement.style.background='#1a1a1a'" />
+              </div>
+              <div class="ov-signal-card-title">Art Basel Hong Kong 2026</div>
+            </div>
+            <div class="ov-signal-card" onclick="event.stopPropagation();showDetail('signal','17-march-on-view-worldwide')">
+              <div class="ov-signal-card-img">
+                <img src="assets/images/scraped/8-2.jpeg" alt="March On View" onerror="this.parentElement.style.background='#1a1a1a'" />
+              </div>
+              <div class="ov-signal-card-title">March On View · Worldwide</div>
+            </div>
+          </div>
+          <a class="read-more" onclick="navigate('signal')">View All Issues</a>
+        </div>
+      </div>
+
+      <!-- ② JOURNAL -->
+      <div class="ov-row" onclick="navigate('journal')">
+        <div class="ov-label-col">
+          <div class="ov-section-tag" onclick="navigate('journal')">Journal</div>
+        </div>
+        <div class="ov-body">
+          <div id="homeJournalList" class="ov-journal-list">
+            <div class="ov-journal-row" onclick="event.stopPropagation();showDetail('journal','35-insights-i-global-art-market-2026')">
+              <div class="ov-journal-date">Apr 2026</div>
+              <div class="ov-journal-title">Insights I Global Art Market 2026</div>
+              <div class="ov-journal-cat">Insights</div>
+            </div>
+            <div class="ov-journal-row" onclick="event.stopPropagation();showDetail('journal','34-fair-diary-i-arco-madrid-2026-from-latin-america-to-europe')">
+              <div class="ov-journal-date">Mar 2026</div>
+              <div class="ov-journal-title">Fair Diary I ARCO Madrid 2026 — From Latin America to Europe</div>
+              <div class="ov-journal-cat">Fair Diary</div>
+            </div>
+            <div class="ov-journal-row" onclick="event.stopPropagation();showDetail('journal','31-insights-i-global-art-fairs-enter-a-structural-signals-from-spark-viennacontemporary-adaa-and-taipei-dangdai')">
+              <div class="ov-journal-date">Jan 2026</div>
+              <div class="ov-journal-title">Insights I Global Art Fairs Enter a Structural Reset</div>
+              <div class="ov-journal-cat">Insights</div>
+            </div>
+            <div class="ov-journal-row" onclick="event.stopPropagation();showDetail('journal','30-fair-diary-i-frieze-seoul-2025-korea-in-focus-galleries-collectors-and-market-insights')">
+              <div class="ov-journal-date">Sep 2025</div>
+              <div class="ov-journal-title">Fair Diary I Frieze Seoul 2025 — Korea in Focus</div>
+              <div class="ov-journal-cat">Fair Diary</div>
+            </div>
+          </div>
+          <a class="read-more" onclick="navigate('journal')">All Articles</a>
+        </div>
+      </div>
+
+      <!-- ③ ADVISORY -->
+      <div class="ov-row" onclick="navigate('advisory')">
+        <div class="ov-label-col">
+          <div class="ov-section-tag" onclick="navigate('advisory')">Advisory</div>
+        </div>
+        <div class="ov-body">
+          <p class="ov-text" style="margin-bottom:24px;">Tailored strategies for collectors, galleries, institutions and brands. Rooted in deep market insight and a global network spanning 15+ countries.</p>
+          <div class="ov-advisory-grid">
+            <div class="ov-advisory-item">
+              <div class="ov-advisory-num">01</div>
+              <div class="ov-advisory-name">Collector Advisory</div>
+              <div class="ov-advisory-desc">Bespoke guidance for individual and institutional collectors.</div>
+            </div>
+            <div class="ov-advisory-item">
+              <div class="ov-advisory-num">02</div>
+              <div class="ov-advisory-name">Gallery &amp; Artist Advisory</div>
+              <div class="ov-advisory-desc">Strategic support for artists and galleries growing internationally.</div>
+            </div>
+            <div class="ov-advisory-item">
+              <div class="ov-advisory-num">03</div>
+              <div class="ov-advisory-name">Brand &amp; Cultural Partnerships</div>
+              <div class="ov-advisory-desc">Meaningful collaborations between brands and the art world.</div>
+            </div>
+          </div>
+          <a class="read-more" onclick="navigate('advisory')">Advisory Services</a>
+        </div>
+      </div>
+
+      <!-- ⑤ PRIVATE SALES -->
+      <div class="ov-row" onclick="navigate('private-sales')">
+        <div class="ov-label-col">
+          <div class="ov-section-tag" onclick="navigate('private-sales')">Private Sales</div>
+        </div>
+        <div class="ov-body">
+          <div class="ov-headline">Discreet.<br>By Introduction.</div>
+          <p class="ov-text">KALDI ART facilitates private transactions between collectors, galleries, and institutions with complete discretion. All enquiries are treated in strict confidence.</p>
+          <a class="read-more" onclick="navigate('private-sales')">Submit an Enquiry</a>
+        </div>
+      </div>
+
+      <!-- ⑦ ABOUT -->
+      <div class="ov-row" onclick="navigate('about')" style="border-bottom:none;">
+        <div class="ov-label-col">
+          <div class="ov-section-tag" onclick="navigate('about')">About</div>
+        </div>
+        <div class="ov-body">
+          <p class="ov-text">KALDI ART is a global art advisory based in Seoul, delivering active market expertise and strategic insight to collectors, galleries, and institutions worldwide.</p>
+          <a class="read-more" onclick="navigate('about')">About KALDI ART</a>
+        </div>
+      </div>
+
+    </div><!-- /.home-sections -->
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── ADVISORY ── -->
+  <section class="page" id="page-advisory">
+    <div class="advisory-intro">
+      <div class="section-label">Services</div>
+      <h1 class="page-title">Art Advisory</h1>
+      <p class="advisory-tagline">Tailored strategies for collectors, galleries, institutions and brands.</p>
+    </div>
+
+    <div class="services-grid grid-2" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <div class="service-name">Collector<br>Advisory</div>
+        <p class="service-desc">Bespoke guidance for individual and institutional collectors. We help build meaningful, strategic collections — from emerging talents to blue-chip works. Our service includes market entry planning, acquisition strategy, portfolio diversification, and legacy consulting.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <div class="service-name">Gallery &amp; Artist<br>Advisory</div>
+        <p class="service-desc">Strategic support for artists, galleries, and estates looking to grow internationally. From positioning and branding to fair participation and partnership building, we provide targeted insights and actionable plans tailored to your career stage or gallery goals.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <div class="service-name">Institutional &amp;<br>Philanthropic Advisory</div>
+        <p class="service-desc">Custom strategies for museums, foundations, and public initiatives. We consult on curatorial direction, acquisitions, program development, and philanthropic art giving — ensuring long-term cultural impact through thoughtful planning and trusted networks.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <div class="service-name">Brand &amp; Cultural<br>Partnerships</div>
+        <p class="service-desc">Creating meaningful collaborations between brands and the art world. We develop and curate culturally impactful projects — through immersive events, brand activations, artist commissions, or long-term cultural initiatives. Each project is tailored to align with both brand identity and artistic integrity.</p>
+      </div>
+    </div>
+
+    <div class="advisory-closing">
+      <div class="section-label" style="margin-bottom:24px;">Global Network</div>
+      <p class="advisory-tagline" style="margin-top:0;">At KALDI ART, we offer bespoke advisory services rooted in deep market insight and a global network. Our extensive reach spans over 15 countries and 30+ cities, encompassing galleries, institutions, art professionals, collectors, and artists in a collaborative space. Whether you're building a collection, seeking strategic exposure, or exploring international expansion, our guidance is always discreet, research-driven, and forward-thinking.</p>
+      <a class="contact-link" href="mailto:contact@kaldiart.com">Enquire: contact@kaldiart.com</a>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="page" id="page-projects">
+    <div class="page-header">
+      <div class="section-label">Selected Work</div>
+      <h1 class="page-title">Projects</h1>
+    </div>
+
+    <!-- Keywords -->
+    <div class="projects-keywords">
+      <span class="project-keyword">Art Advisory</span>
+      <span class="project-keyword">Cultural Bridge</span>
+      <span class="project-keyword">Corporate Art Excellence</span>
+    </div>
+
+    <!-- Blur gate -->
+    <div class="projects-gate" id="projectsGate">
+      <div class="artists-gate-content blurred" id="projectsContent">
+        <div class="projects-categories-wrap">
+
+          <!-- Category 1 -->
+          <div>
+            <div class="projects-category-label">International Gallery Collaborations</div>
+            <div class="artists-grid">
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://d32dm0rphc51dk.cloudfront.net/kEaG54Biv3J58_RBDaQKIA/larger.jpg" alt="Andreas Eriksson at Hakojae" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Andreas Eriksson</div>
+                  <div class="artist-card-meta">Hakojae Gallery, Seoul · 2022</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://d32dm0rphc51dk.cloudfront.net/PxybFoyAYthwlbzntQOsQw/larger.jpg" alt="Tom Anholt at Hakojae" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Tom Anholt</div>
+                  <div class="artist-card-meta">Hakojae Gallery, Seoul · 2021</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://res.cloudinary.com/smimagebank/image/upload/w_1024,c_limit,f_auto,fl_progressive/v1697467874/sprueth_magers_Thomas_Scheibitz_Scivias_2022_13626.jpg" alt="Thomas Scheibitz at Hakojae" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Thomas Scheibitz</div>
+                  <div class="artist-card-meta">Hakojae Gallery, Seoul · 2023</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://d32dm0rphc51dk.cloudfront.net/Iy7tiGIF-lvcfw95Os8ksg/larger.jpg" alt="Juergen Staack and Hong Soun at Seojung Art" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Juergen Staack &amp; Hong Soun</div>
+                  <div class="artist-card-meta">Seojung Art, Seoul · 2024</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://d32dm0rphc51dk.cloudfront.net/DaX7bxzXYTZ9NJ9Phep4JA/larger.jpg" alt="Fiona Rae at Hakojae" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Fiona Rae</div>
+                  <div class="artist-card-meta">Hakojae Gallery, Seoul · 2018</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://d32dm0rphc51dk.cloudfront.net/bru481qX9yNBchVQaXRwfw/larger.jpg" alt="Elizabeth Peyton at Leeahn Gallery" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Elizabeth Peyton</div>
+                  <div class="artist-card-meta">Leeahn Gallery, Seoul · 2021</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/99/9911d427934442449f133dc652c0d386/peter-herrmann-ankunft-2012-oil-on-canvas-171-x-190-cm-2-.jpg" alt="Group Exhibition at Duarte Sequeira" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Group Exhibition</div>
+                  <div class="artist-card-meta">Duarte Sequeira, Seoul · 2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div>
+            <div class="projects-category-label">Market Introduction &amp; Pop-ups</div>
+            <div class="artists-grid">
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://static-assets.artlogic.net/w_1800,h_1320,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite0875/usr/library/images/main/events/7/list-image_tan2406_broken-sun-view-1-.jpg" alt="Quynh Galerie at Frieze Seoul 2024" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Quynh Galerie</div>
+                  <div class="artist-card-meta">Frieze Seoul — Stand Prize · 2024</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div>
+            <div class="projects-category-label">Corporate &amp; Public Art Consulting</div>
+            <div class="artists-grid">
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://news.samsungcnt.com/upload/2.0/wp-content/uploads/sites/3/2024/10/Article1.jpg" alt="Samsung C&T Raemian One Bailey" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Samsung C&amp;T — Raemian One Bailey</div>
+                  <div class="artist-card-meta">iF Design Award · Seoul · 2024</div>
+                </div>
+              </div>
+              <div class="artist-card">
+                <img class="artist-card-img" src="https://jaumeplensa.com/gestorPlensa/images/entradas/entrada-114/1-Possibilities-south-korea.JPG" alt="Jaume Plensa Possibilities at Lotte World Tower" loading="lazy">
+                <div class="artist-card-overlay">
+                  <div class="artist-card-name">Jaume Plensa — Possibilities</div>
+                  <div class="artist-card-meta">Lotte World Tower, Seoul · 2016</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── ARTISTS ── -->
+  <section class="page" id="page-artists">
+    <div class="page-header">
+      <div class="section-label">Represented &amp; Advised</div>
+      <h1 class="page-title">Artists</h1>
+    </div>
+
+    <!-- 블러 게이트 -->
+    <div class="artists-gate" id="artistsGate">
+
+      <!-- 실제 콘텐츠 (블러 처리됨) -->
+      <div class="artists-gate-content blurred" id="artistsContent">
+        <div class="artists-grid">
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/12/12d6174a7c144f48a2466fa6ba39d1dc/1.jpeg" alt="Auseklis Baušķenieks" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Auseklis Baušķenieks</div><div class="artist-card-meta">Latvian · 1910–2007</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/62/625efa23f54744ef814be389b853b511/anik-boda-treasure-island-2023-201-x-283-cm.jpg" alt="Anikó Boda" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Anikó Boda</div><div class="artist-card-meta">German · b. 1937</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/26/26f1c05041854616a76a7065a4279c2a/nell-brookfield-inbetweens-2024-natural-pigment-and-acrylic-dispersion-on-linen-116-x114-cm.jpg" alt="Nell Brookfield" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Nell Brookfield</div><div class="artist-card-meta">British · b. 1994</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/f1/f1aa7a9eb3cb4baf8c1e2054df6c2a74/justin-caguiat-gas-panic-blue-2020.png" alt="Justin Caguiat" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Justin Caguiat</div><div class="artist-card-meta">b. 1989</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/b8/b86f8a31a13d40a4971f1b010123dd6b/work2.jpg" alt="Hyelim Cha" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Hyelim Cha</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/1d/1d28cbb686a84048a031710e7fb75f20/work.png" alt="So Lim Cha" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">So Lim Cha</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/13/139fbb675b25484d8b9bc76453d36501/bundle-2023-acrylic-on-canvas-30-x-30-in-76.2-x-76.2-cm.jpeg" alt="Yuree Cha" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Yuree Cha</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/93/93afd7ca7e654c1190cfd226142bbd47/7.jpeg" alt="Joseph Choï" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Joseph Choï</div><div class="artist-card-meta">Korean · b. 1968</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/80/806efd4727e24235a2314fda71255996/22because-we-actually-played-outside-as-kids22-80x80-cm-series-albahian-joana-choumali-2020-scaled.jpg" alt="Joana Choumali" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Joana Choumali</div><div class="artist-card-meta">Ivorian · b. 1974</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/89/8925f73877ec43ec8915a23c33bf07f9/parmen-daushvili-apartment-1a-2024-oil-on-canvas-210-x-165.jpeg" alt="Parmen Daushvili" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Parmen Daushvili</div><div class="artist-card-meta">Georgian · b. 1970</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/a3/a3cec794390b4b0eb6cfbba68d61ac4f/rafael-delacruz-emo-de-luz-2023-oil-and-acrylic-on-canvas-163.8-x-191.8-cm..jpeg" alt="Rafael Delacruz" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Rafael Delacruz</div><div class="artist-card-meta">American · b. 1989</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/19/1954eb44fd514fa3bc1e1d9f8e2b61f7/alexander-dik-kampfrichter-2024-oil-and-pigments-spray-paint-on-linen-190-x-150-cm.jpg" alt="Alexander Dik" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Alexander Dik</div><div class="artist-card-meta">Kazakh · b. 1983</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/7e/7e846525ab27419384f643669da98e93/andy-dixon-malibu-2024-71-x-57-.jpeg" alt="Andy Dixon" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Andy Dixon</div><div class="artist-card-meta">American · b. 1979</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/b5/b519efc78ddf4388859c1b0e25fc82e5/f-nfter-fr-hling-2024-oil-on-canvas-150-x-200-cm.png" alt="Willehad Eilers" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Willehad Eilers</div><div class="artist-card-meta">German · b. 1980</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/c9/c976f93c234342089da9254aa89c8a86/zohar-fraiman-galerie-russi-klenner.jpg" alt="Zohar Fraimann" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Zohar Fraimann</div><div class="artist-card-meta">Israeli · b. 1987</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/48/481db0f5e028425f9b7910c0c2316ddd/3.jpg" alt="Daniel Gordon" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Daniel Gordon</div><div class="artist-card-meta">American · b. 1980</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/3c/3c8be268248143b0bf3d51a88d1f2e2e/kate-gottgens-suburban-erotic.-2023.jpeg" alt="Kate Gottgens" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Kate Gottgens</div><div class="artist-card-meta">South African · b. 1965</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/bd/bd892debfd704464b8c20fccf31deb10/tipping-point-117-2023-mixed-media-181.8x181.8cm-.jpeg" alt="Jaehyuk Han" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Jaehyuk Han</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/f8/f82e358a745a48d78e9756eb31c9f395/jamie-hawkesworth-untitled-from-the-series-the-british-isles-2007-2020-2.jpeg" alt="Jamie Hawkesworth" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Jamie Hawkesworth</div><div class="artist-card-meta">British · b. 1987</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/99/9911d427934442449f133dc652c0d386/peter-herrmann-ankunft-2012-oil-on-canvas-171-x-190-cm-2-.jpg" alt="Peter Herrmann" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Peter Herrmann</div><div class="artist-card-meta">German · b. 1937</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/06/06bc0fd98cf24be4b65065623e54d67e/jaeyoung-kang-lamplighter-91x72cm-acrylic-and-oil-on-canvas-2023.jpg" alt="Jaeyoung Kang" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Jaeyoung Kang</div><div class="artist-card-meta">South Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/d8/d810dd12abbe45a291239be536dc9685/kim-hyungdae-78-1978.jpeg" alt="Hyungdae Kim" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Hyungdae Kim</div><div class="artist-card-meta">South Korean · b. 1936</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/18/18a150d8973f4a6e8bf0254faeada095/discussion-2022-72-mixed-media-130x162cm-2022-.jpeg" alt="Keuntai Kim" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Keuntai Kim</div><div class="artist-card-meta">South Korean · b. 1953</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/a1/a19ea0da3766461daba3a007278db238/yunyoung-kim-volcano-2024-embroidery-on-cotton-90-x-117-cm.jpg?focal=47,45" alt="Yunyoung Kim" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Yunyoung Kim</div><div class="artist-card-meta">South Korean · b. 1989</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/3a/3acb92e1ed7249bdb007a1200dadbbd0/shine-kong_work-1.png" alt="Shine Kong" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Shine Kong</div><div class="artist-card-meta">South Korean · b. 1979</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/53/537304d03ef049d4b03b91b762a30c29/chounhwan-lee_work.jpg?focal=49,29" alt="Chounhwan Lee" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Chounhwan Lee</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/58/5844810a1bef4a0f82ddbd87f9b0caf7/work.jpg?focal=38,50" alt="Heungdeok Lee" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Heungdeok Lee</div><div class="artist-card-meta">Korean</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://societeberlin.com/media/images/TGood_adoc_SOCIETE_250410_1115-Edit.width-2560.jpg" alt="Conny Maier" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Conny Maier</div><div class="artist-card-meta">German · b. 1987</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/a0/a0f89a5ddb3a46bebf8981aa59b66509/paulo-nazarethl-southeast-africa-2017.jpeg?focal=49,29" alt="Paulo Nazareth" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Paulo Nazareth</div><div class="artist-card-meta">Brazilian · b. 1977</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/cf/cf84b9a721ef4b679ae2533fb1a1b646/robert-pan-fr-4.839-po.-110-5-cm-x-90-5-cm-2018-2019.jpg" alt="Robert Pan" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Robert Pan</div><div class="artist-card-meta">Italian · b. 1969</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/f3/f3a7621d0ead415687d3ca2ad291b49e/3.jpg" alt="Catherine Repko" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Catherine Repko</div><div class="artist-card-meta">American · b. 1990</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/8e/8eac4d99212049129f794fa6783eb819/bryan-rogers-platform-2023.jpg" alt="Bryan Rogers" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Bryan Rogers</div><div class="artist-card-meta">American · b. 1977</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/2c/2cc39b6741eb4200af3fdfe49d6cb120/1-sanpitak_pinaree_offering-vessel_2021_250-x-250-cm.jpg" alt="Pinaree Sanpitak" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Pinaree Sanpitak</div><div class="artist-card-meta">Thai · b. 1961</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://www.everard-read-capetown.co.za/images/28397_h2048w2048gt.5.jpg" alt="Brett Charles Seiler" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Brett Charles Seiler</div><div class="artist-card-meta">South African · b. 1994</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/93/93385dbeaeed435f888d95eda835cf6e/pierre-seinturier-lover-s-leap-oil-on-canvas-196-x-131-x-4-cm.jpeg" alt="Pierre Seinturier" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Pierre Seinturier</div><div class="artist-card-meta">French · b. 1988</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/a9/a95770a96c034639818b427346a8f697/view-2025-1-copy.png" alt="Gee Song" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Gee Song</div><div class="artist-card-meta">South Korean · b. 1980</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/e7/e76db57bdf194811848f6f54c26d867d/gyaeyoung-song-drawing-with-knife-new-synthesis-graphite-powder-on-korean-paper-hanji-hand-cut-perforating.jpg" alt="Gyaeyoung Song" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Gyaeyoung Song</div><div class="artist-card-meta">South Korean · b. 1965</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/5f/5fe08235d8364f0982880227ff3ba4c8/nick-taggart-rochelle-and-sandy.jpeg" alt="Nick Taggart" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Nick Taggart</div><div class="artist-card-meta">English · b. 1954</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/20/20622da7b4af4a3abe54ac15f9166c22/3.jpg" alt="Daniel Weissbach" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Daniel Weissbach</div><div class="artist-card-meta">German · 1976–2020</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/6f/6f54a297723d4100b6f160ff0235ae37/2023_oil-and-acrylic-on-canvas_227.8x181.8cm.jpeg" alt="Seoyoon Yi" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Seoyoon Yi</div><div class="artist-card-meta">South Korean · b. 1992</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/94/94292a359a8d453fafb493de8c00e2f7/miran-yoon-born-again-mixed-media-on-canvas-150x150cm-2011.jpeg" alt="Miran Yoon" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Miran Yoon</div><div class="artist-card-meta">South Korean · b. 1948</div></div></div>
+          <div class="artist-card"><img class="artist-card-img" src="https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2419/usr/images/artists/artwork_image_for_artists_page/items/68/6860d969429d4f6b8123cf7f877763f5/a-piece-of-one-day-32-9-64uir-570.jpeg" alt="Saerom Yoon" loading="lazy"><div class="artist-card-overlay"><div class="artist-card-name">Saerom Yoon</div><div class="artist-card-meta">South Korean · b. 1985</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── PRIVATE SALES ── -->
+  <section class="page" id="page-private-sales">
+    <div class="private-intro">
+      <div>
+        <div class="section-label">Confidential</div>
+        <h1 class="page-title">Private<br>Sales</h1>
+      </div>
+      <div class="private-text">
+        <p>KALDI ART facilitates private transactions between collectors, galleries, and institutions with complete discretion. We do not publicise the works we handle or the parties involved.</p>
+        <p>Our private sales service covers Korean modern and contemporary works across all categories — from the Dansaekhwa generation to emerging artists — as well as international works held by Korean collectors.</p>
+        <p>All enquiries are treated in strict confidence. Introductions are made only when mutual interest is confirmed.</p>
+      </div>
+    </div>
+
+    <div class="private-form">
+      <div class="form-title">Submit an Enquiry</div>
+      <form id="privateSalesForm" onsubmit="submitPrivateSales(event)">
+        <div class="form-field">
+          <label>Name</label>
+          <input type="text" id="psName" placeholder="Your full name" required />
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" id="psEmail" placeholder="Your email address" required />
+        </div>
+        <div class="form-field">
+          <label>Nature of Enquiry</label>
+          <input type="text" id="psNature" placeholder="Buying, selling, or both" />
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea id="psMessage" placeholder="Please describe the work or your requirements. All information is kept strictly confidential."></textarea>
+        </div>
+        <button class="form-submit" type="submit">Submit Enquiry</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── SIGNAL ── -->
+  <section class="page" id="page-signal">
+    <div class="signal-intro">
+      <div class="section-label">Editorial</div>
+      <h1 class="page-title">Signal</h1>
+      <p class="signal-subtitle">The pulse of the fast-moving art market.</p>
+      <p class="signal-subtitle" style="font-size:16px; font-weight:400; margin-top:12px; opacity:0.7; max-width:560px;">Sharp, curated intelligence — critical market shifts, auction highlights, gallery movements, and institutional news. Distilled through KALDI ART's cross-continental lens between Europe and Asia.</p>
+    </div>
+
+    <div id="signalGrid" class="signal-grid">
+      <!-- content.json 로드 후 JS가 동적으로 채움 -->
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── JOURNAL ── -->
+  <section class="page" id="page-journal">
+    <div class="page-header">
+      <div class="section-label">Kaldi Intelligence</div>
+      <h1 class="page-title">Journal</h1>
+      <p style="font-size:16px; color:var(--text-muted); margin-top:8px;">Decoding the global art market — KALDI's original content from inside the art world.</p>
+    </div>
+
+    <div id="journalList" class="journal-list">
+      <!-- JS로 동적 렌더링 -->
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="page" id="page-about">
+    <div class="page-header">
+      <div class="section-label">The Practice</div>
+      <h1 class="page-title">About</h1>
+      <p style="font-size:16px; color:var(--text-muted); margin-top:8px; letter-spacing:0.03em;">Shaping the Future of Contemporary Art — From Seoul to the World.</p>
+    </div>
+
+    <div class="about-body">
+      <div class="about-text">
+        <p>KALDI ART is a global art advisory operating between Asia and Europe, delivering active market expertise and strategic insight to collectors, galleries, and institutions worldwide.</p>
+        <p>We specialize in identifying exceptional works and facilitating high-level transactions, providing collectors with discreet, informed guidance and access to emerging and established artists across the international art market.</p>
+        <p>With over two decades of combined advisory experience, KALDI ART navigates the global art landscape with precision, drawing on a deeply trusted network of collectors, galleries, and institutions to connect clients to the opportunities and artworks that define contemporary collecting.</p>
+        <p>Our work is guided by a strong curatorial perspective, allowing us to recognize potential early and introduce compelling voices to the market with confidence. We combine comprehensive market insights, strategic vision, and global reach to ensure collectors engage with the art that shapes today's cultural landscape.</p>
+      </div>
+
+      <div class="about-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-label">Contact</div>
+          <div class="sidebar-content">
+            <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a><br><br>
+            For advisory enquiries, private sales, and press.
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-label">Address</div>
+          <div class="sidebar-content">
+            327, Teheran-ro<br>
+            Gangnam-gu, Seoul<br>
+            Korea
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-label">Follow</div>
+          <div class="sidebar-content">
+            <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-label">Signal</div>
+          <div class="sidebar-content">
+            Subscribe to our editorial digest on contemporary art from Seoul and beyond.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ── DETAIL PAGE ── -->
+  <section class="page" id="page-detail">
+    <div class="detail-back">
+      <button class="detail-back-btn" onclick="navigateBack()">← Back</button>
+    </div>
+    <div id="detailContent"></div>
+    <footer>
+      <div class="footer-left">
+        <div class="footer-brand">KALDI ART</div>
+        <div class="footer-copy">© 2026 KALDI ART. All rights reserved.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <div class="footer-col-content">
+          <a href="mailto:contact@kaldiart.com">contact@kaldiart.com</a>
+          327, Teheran-ro, Gangnam-gu<br>Seoul, Korea
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Follow</div>
+        <div class="footer-col-content">
+          <a href="https://www.instagram.com/kaldiart/" target="_blank" class="ig-link"><svg viewBox="0 0 24 24" aria-label="Instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@kaldiart</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+</div><!-- /#app -->
+
+<script>
+  const pages = ['home','advisory','projects','artists','private-sales','signal','journal','about','detail'];
+
+  function navigate(id) {
+    // hide all
+    pages.forEach(p => {
+      const el = document.getElementById('page-' + p);
+      if (el) el.classList.remove('active');
+    });
+
+    // show target
+    const target = document.getElementById('page-' + id);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    // lock overlay 가시성: 해당 page가 active일 때만 표시
+    const aLock = document.getElementById('artistsLock');
+    const pLock = document.getElementById('projectsLock');
+    if (aLock) aLock.style.display = (id === 'artists') ? '' : 'none';
+    if (pLock) pLock.style.display = (id === 'projects') ? '' : 'none';
+
+    // update nav active state
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === id);
+    });
+
+    // update URL hash
+    history.pushState(null, '', id === 'home' ? '/' : '#' + id);
+  }
+
+  function toggleMenu() {
+    const drawer = document.getElementById('navDrawer');
+    drawer.classList.toggle('open');
+  }
+
+  // handle initial load from hash
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && pages.includes(hash)) {
+      navigate(hash);
+    } else {
+      navigate('home');
+    }
+  });
+
+  // handle browser back/forward
+  window.addEventListener('popstate', () => {
+    const hash = window.location.hash.replace('#', '');
+    navigate(hash || 'home');
+  });
+
+  /* ══════════════════════════════════════════
+     SCROLL REVEAL — 홈 오버뷰 섹션
+     IntersectionObserver 기반: 진입 시 fade-up, 상단 이탈 시 fade-out
+  ══════════════════════════════════════════ */
+  (function () {
+    let enterObs, exitObs;
+
+    function initObservers() {
+      const rows = Array.from(document.querySelectorAll('#page-home .ov-row'));
+      if (!rows.length) return;
+
+      // ① 진입 감지: 하단에서 행이 18% 보이는 순간 fade-up
+      enterObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            entry.target.classList.remove('is-past');
+          }
+        });
+      }, {
+        threshold: 0.18,
+        rootMargin: '0px 0px -40px 0px'  // 화면 하단 40px 안쪽부터 트리거
+      });
+
+      // ② 상단 이탈 감지: 행이 화면 위로 완전히 나가면 fade-out
+      exitObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+            entry.target.classList.remove('is-visible');
+            entry.target.classList.add('is-past');
+          }
+        });
+      }, {
+        threshold: 0
+      });
+
+      rows.forEach(row => {
+        enterObs.observe(row);
+        exitObs.observe(row);
+      });
+    }
+
+    // navigate('home') 시 재초기화
+    const _origNavigate = navigate;
+    window.navigate = function (id) {
+      _origNavigate(id);
+      if (id === 'home') {
+        // 페이지 전환 후 rows 상태 초기화 & 옵저버 재연결
+        requestAnimationFrame(() => {
+          if (enterObs) { enterObs.disconnect(); exitObs.disconnect(); }
+          document.querySelectorAll('#page-home .ov-row').forEach(r => {
+            r.classList.remove('is-visible', 'is-past');
+          });
+          initObservers();
+        });
+      }
+    };
+
+    window.addEventListener('DOMContentLoaded', initObservers);
+  })();
+
+  /* ══════════════════════════════════════════
+     BLUR GATE — 비밀번호 인증 (Artists + Projects 공용)
+  ══════════════════════════════════════════ */
+  const GATE_PW = 'kaldiart';
+  const SESSION_KEYS = { artists: 'ka_artists_auth', projects: 'ka_projects_auth' };
+  let authTarget = 'artists';
+
+  function artistsUnlock() {
+    document.getElementById('artistsContent').classList.remove('blurred');
+    document.getElementById('artistsLock').classList.add('hidden');
+  }
+
+  function projectsUnlock() {
+    document.getElementById('projectsContent').classList.remove('blurred');
+    document.getElementById('projectsLock').classList.add('hidden');
+  }
+
+  function openAuthModal(target) {
+    authTarget = target || 'artists';
+    document.getElementById('authInput').value = '';
+    document.getElementById('authError').textContent = '';
+    document.getElementById('authModalSub').textContent =
+      authTarget === 'projects'
+        ? 'Enter your password to access project information.'
+        : 'Enter your password to access artist information.';
+    document.getElementById('authModalBackdrop').classList.add('open');
+    setTimeout(() => document.getElementById('authInput').focus(), 50);
+  }
+
+  function closeAuthModal(e) {
+    if (e && e.target !== document.getElementById('authModalBackdrop')) return;
+    document.getElementById('authModalBackdrop').classList.remove('open');
+  }
+
+  function submitAuth() {
+    const val = document.getElementById('authInput').value;
+    if (val === GATE_PW) {
+      sessionStorage.setItem(SESSION_KEYS[authTarget], '1');
+      document.getElementById('authModalBackdrop').classList.remove('open');
+      if (authTarget === 'projects') projectsUnlock();
+      else artistsUnlock();
+    } else {
+      const err = document.getElementById('authError');
+      err.textContent = 'Incorrect password';
+      document.getElementById('authInput').value = '';
+      document.getElementById('authInput').focus();
+      // 흔들기 효과
+      const input = document.getElementById('authInput');
+      input.style.transition = 'transform 0.07s ease';
+      let i = 0;
+      const shake = setInterval(() => {
+        input.style.transform = `translateX(${i % 2 === 0 ? 5 : -5}px)`;
+        if (++i > 5) { clearInterval(shake); input.style.transform = ''; }
+      }, 70);
+    }
+  }
+
+  // 세션 유지: 이미 인증됐으면 즉시 해제
+  window.addEventListener('DOMContentLoaded', () => {
+    // 초기 상태: lock overlay 모두 숨김 (navigate에서 제어)
+    const aLock = document.getElementById('artistsLock');
+    const pLock = document.getElementById('projectsLock');
+    if (aLock) aLock.style.display = 'none';
+    if (pLock) pLock.style.display = 'none';
+
+    if (sessionStorage.getItem(SESSION_KEYS.artists) === '1') artistsUnlock();
+    if (sessionStorage.getItem(SESSION_KEYS.projects) === '1') projectsUnlock();
+  });
+
+
+  /* ══════════════════════════════════════════
+     NEWSLETTER SUBSCRIBE
+  ══════════════════════════════════════════ */
+  /* ══════════════════════════════════════════
+     PRIVATE SALES — mailto 전송
+  ══════════════════════════════════════════ */
+  function submitPrivateSales(e) {
+    e.preventDefault();
+    const name    = document.getElementById('psName').value.trim();
+    const email   = document.getElementById('psEmail').value.trim();
+    const nature  = document.getElementById('psNature').value.trim();
+    const message = document.getElementById('psMessage').value.trim();
+
+    const subject = encodeURIComponent('Private Sales Enquiry — KALDI ART');
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nNature of Enquiry: ${nature || '—'}\n\n${message}`
+    );
+
+    window.location.href = `mailto:contact@kaldiart.com?subject=${subject}&body=${body}`;
+  }
+
+  function handleSubscribe(e, form) {
+    e.preventDefault();
+    const input = form.querySelector('.subscribe-input');
+    const btn   = form.querySelector('.subscribe-btn');
+    btn.textContent = 'Done ✓';
+    btn.style.opacity = '0.45';
+    input.value = '';
+    input.placeholder = 'Thank you.';
+    input.disabled = true;
+    btn.disabled = true;
+  }
+
+  /* ══════════════════════════════════════════
+     CONTENT DATA — Signal & Journal Dynamic Rendering
+  ══════════════════════════════════════════ */
+  let contentData = { signal: [], journal: [] };
+  let detailHistory = 'signal';
+
+  // 카테고리 태그 추출
+  function inferCategory(id) {
+    if (id.includes('insights')) return 'Insights';
+    if (id.includes('fair-diary')) return 'Fair Diary';
+    if (id.includes('art-review')) return 'Art Review';
+    return 'Journal';
+  }
+
+  // 원격 이미지 URL → 로컬 scraped 경로
+  function localImg(url) {
+    if (!url) return '';
+    try {
+      const filename = url.split('/').pop().split('?')[0];
+      return 'assets/images/scraped/' + filename;
+    } catch(e) { return url; }
+  }
+
+  // 날짜 포맷: "APRIL 6, 2026" → "Apr 2026"
+  function fmtDate(d) {
+    if (!d) return '';
+    return d.replace(/(\w{3})\w+\s+\d+,?\s*/, '$1 ').trim();
+  }
+
+  /* ── Signal 그리드 렌더링 ── */
+  function bestCoverImg(item) {
+    // coverImage 우선, 없거나 깨진 파일명이면 body images[0] fallback
+    const BROKEN = ['1200x630c', '.-..jpeg', '.jpeg', ''];
+    let url = item.coverImage || '';
+    let fname = url.split('/').pop().split('?')[0];
+    if (BROKEN.includes(fname)) {
+      const bodyImgs = (item.images || []).filter(u => u);
+      url = bodyImgs[0] || '';
+    }
+    return localImg(url);
+  }
+
+  function renderSignalGrid() {
+    const grid = document.getElementById('signalGrid');
+    if (!grid || !contentData.signal.length) return;
+    let html = '';
+    contentData.signal.forEach((item, i) => {
+      const img = bestCoverImg(item);
+      const loc = (item.location || '').toUpperCase();
+      html += `
+        <div class="signal-card" onclick="showDetail('signal','${item.id}')">
+          <div class="signal-card-image" style="background:#111;cursor:pointer;">
+            <div class="signal-card-bg" style="background-image:url('${img}');background-size:cover;background-position:center;"></div>
+            <div class="signal-card-overlay"></div>
+            <div class="signal-card-text">
+              <div class="signal-card-label">${loc}${loc && item.date ? ' · ' : ''}${fmtDate(item.date)}</div>
+              <div class="signal-card-headline">${item.title}</div>
+            </div>
+          </div>
+          <div class="signal-card-meta">${fmtDate(item.date)}</div>
+        </div>`;
+      if (i === 2) {
+        html += `
+        <div class="subscribe-inline">
+          <div class="subscribe-inline-text">
+            <div class="subscribe-label">The Signal</div>
+            <div class="subscribe-headline">Korean art. Global perspective.<br>Monthly in your inbox.</div>
+          </div>
+          <div>
+            <form class="subscribe-form" onsubmit="handleSubscribe(event,this)">
+              <input class="subscribe-input" type="email" placeholder="Your email address" required/>
+              <button class="subscribe-btn" type="submit">Subscribe →</button>
+            </form>
+            <div class="subscribe-note">No spam. Unsubscribe anytime.</div>
+          </div>
+        </div>`;
+      }
+    });
+    grid.innerHTML = html;
+  }
+
+  /* ── Journal 리스트 렌더링 ── */
+  function renderJournalList() {
+    const list = document.getElementById('journalList');
+    if (!list || !contentData.journal.length) return;
+    let html = '';
+    contentData.journal.forEach((item, i) => {
+      const cat = inferCategory(item.id);
+      html += `
+        <div class="journal-item" onclick="showDetail('journal','${item.id}')" style="cursor:pointer;">
+          <div class="journal-date">${fmtDate(item.date)}</div>
+          <div class="journal-title">${item.title}</div>
+          <div class="journal-category">${cat}</div>
+        </div>`;
+      if (i === 2) {
+        html += `
+        <div class="journal-subscribe">
+          <div class="subscribe-inline-text">
+            <div class="subscribe-label">Kaldi Intelligence</div>
+            <div class="subscribe-headline">Get our editorial digest on Korean art.</div>
+          </div>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event,this)">
+            <input class="subscribe-input" type="email" placeholder="Your email address" required/>
+            <button class="subscribe-btn" type="submit">Subscribe →</button>
+          </form>
+        </div>`;
+      }
+    });
+    list.innerHTML = html;
+  }
+
+  /* ── 상세 페이지 표시 ── */
+  function showDetail(type, id) {
+    const arr = contentData[type] || [];
+    const article = arr.find(a => a.id === id);
+    if (!article) return;
+    detailHistory = type;
+
+    const cover = bestCoverImg(article);
+    const label = (article.location || article.category || type).toUpperCase();
+    const bodyHtml = mdToHtml(article.body || '', article.images || []);
+
+    document.getElementById('detailContent').innerHTML = `
+      ${cover ? `<div class="detail-hero" style="background-image:url('${cover}')"></div>` : ''}
+      <div class="detail-header">
+        <div class="detail-label">${label}</div>
+        <h1 class="detail-title">${article.title}</h1>
+        <div class="detail-meta">${article.date || ''}</div>
+      </div>
+      <div class="detail-body">${bodyHtml}</div>`;
+
+    navigate('detail');
+    window.scrollTo(0, 0);
+  }
+
+  function navigateBack() {
+    navigate(detailHistory || 'signal');
+    window.scrollTo(0, 0);
+  }
+
+  /* ── Markdown → HTML 변환 ── */
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+
+  // 인라인 마크다운: escHtml 적용 후 실행
+  function renderInline(str) {
+    str = escHtml(str);
+    // **bold**
+    str = str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // *italic* (단, ** 제외)
+    str = str.replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');
+    return str;
+  }
+
+  function mdToHtml(text, images) {
+    const localImgs = (images || [])
+      .filter(u => u && !u.includes('captcha'))
+      .map(localImg);
+    let imgIdx = 0;
+    let firstHeadingSkipped = false;
+    let paraCount = 0;
+
+    // 캡션 블록 판별: art 캡션에서 흔히 나오는 패턴들
+    function isCaptionBlock(b) {
+      if (b.length >= 350) return false;
+      if (b.startsWith('#')) return false;
+      if (/^-{3,}$/.test(b)) return false;
+      const lo = b.toLowerCase();
+      return (
+        /^(@|image\b|photo\b|courtesy\b|©)/i.test(b) ||
+        lo.includes('courtesy of') ||
+        lo.includes('collection of') ||
+        lo.includes('gift of') ||
+        lo.includes('image by') ||
+        lo.includes('photo by') ||
+        b.includes('©')
+      );
+    }
+
+    const cleanBlocks = text.split(/\n\n+/).map(b => b.trim()).filter(Boolean);
+
+    // 캡션 블록이 소비할 이미지 수 미리 계산
+    const captionImgCount = Math.min(
+      cleanBlocks.filter(isCaptionBlock).length,
+      localImgs.length
+    );
+    const fallbackImgCount = localImgs.length - captionImgCount;
+
+    // 캡션 외 일반 단락 수 (헤딩/구분선/테이블 제외)
+    const nonCaptionParas = cleanBlocks.filter(b =>
+      !b.startsWith('#') && !/^-{3,}$/.test(b) && !b.startsWith('|') && !isCaptionBlock(b)
+    ).length;
+
+    // 나머지 이미지들의 균등 분배 간격
+    const fallbackInterval = fallbackImgCount > 0
+      ? Math.max(2, Math.floor(nonCaptionParas / fallbackImgCount))
+      : 999;
+
+    return cleanBlocks.map((block) => {
+
+      // 수평선 ---
+      if (/^-{3,}$/.test(block)) {
+        return '<hr style="border:none;border-top:1px solid var(--border);margin:40px 0;">';
+      }
+
+      // H4 ####
+      if (block.startsWith('#### ')) {
+        return `<h4 class="detail-h4">${renderInline(block.slice(5))}</h4>`;
+      }
+      // H3 ###
+      if (block.startsWith('### ')) {
+        return `<h3>${renderInline(block.slice(4))}</h3>`;
+      }
+      // H2 ## — 첫 번째는 제목 중복이므로 스킵
+      if (block.startsWith('## ')) {
+        if (!firstHeadingSkipped) { firstHeadingSkipped = true; return ''; }
+        return `<h2>${renderInline(block.slice(3))}</h2>`;
+      }
+      // H1 #
+      if (block.startsWith('# ')) {
+        if (!firstHeadingSkipped) { firstHeadingSkipped = true; return ''; }
+        return `<h2>${renderInline(block.slice(2))}</h2>`;
+      }
+
+      const lines = block.split('\n');
+
+      // 불릿 목록 (- item)
+      if (lines.every(l => l.trim().startsWith('- '))) {
+        const items = lines.map(l => `<li>${renderInline(l.trim().slice(2))}</li>`).join('');
+        return `<ul>${items}</ul>`;
+      }
+
+      // 숫자 목록 (1. item)
+      if (lines.every(l => /^\d+\.\s/.test(l.trim()))) {
+        const items = lines.map(l => `<li>${renderInline(l.trim().replace(/^\d+\.\s/, ''))}</li>`).join('');
+        return `<ol>${items}</ol>`;
+      }
+
+      // 마크다운 테이블 (| col | col |)
+      if (lines.length >= 2 && lines[0].trim().startsWith('|') && lines[0].trim().endsWith('|')) {
+        const isSeperator = l => /^\|[\s\-:|]+\|$/.test(l.trim());
+        const parseRow = l => l.trim().slice(1, -1).split('|').map(c => renderInline(c.trim()));
+        const headerCells = parseRow(lines[0]);
+        const bodyRows = lines.slice(1).filter(l => !isSeperator(l));
+        const thead = `<thead><tr>${headerCells.map(c => `<th>${c}</th>`).join('')}</tr></thead>`;
+        const tbody = `<tbody>${bodyRows.map(l => `<tr>${parseRow(l).map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+        return `<div class="detail-table-wrap"><table class="detail-table">${thead}${tbody}</table></div>`;
+      }
+
+      // 캡션 블록 → 이미지 + 캡션 figure로 묶기
+      if (isCaptionBlock(block) && imgIdx < localImgs.length && imgIdx < captionImgCount) {
+        return `<figure class="detail-figure">
+          <img class="detail-img" src="${localImgs[imgIdx++]}" alt="" loading="lazy" onerror="this.style.display='none'">
+          <figcaption class="detail-img-caption">${renderInline(block)}</figcaption>
+        </figure>`;
+      }
+
+      // 일반 단락
+      paraCount++;
+      let out = `<p>${lines.map(renderInline).join('<br>')}</p>`;
+
+      // 나머지 이미지: 캡션 없는 단락에 균등 간격으로 삽입
+      if (imgIdx < localImgs.length && paraCount % fallbackInterval === 0) {
+        out += `<img class="detail-img" src="${localImgs[imgIdx++]}" alt="" loading="lazy" onerror="this.style.display='none'">`;
+      }
+
+      return out;
+    }).join('\n');
+  }
+
+  /* ── content.json 로드 ── */
+  (function loadContent() {
+    fetch('assets/content.json')
+      .then(r => r.json())
+      .then(data => {
+        contentData = data;
+        renderSignalGrid();
+        renderJournalList();
+      })
+      .catch(() => {
+        // content.json 없으면 정적 HTML 그대로 유지
+      });
+  })();
+
+  /* ══════════════════════════════════════════
+     HERO SLIDESHOW — 자동 슬라이드
+  ══════════════════════════════════════════ */
+  (function () {
+    const INTERVAL = 5000; // 슬라이드 간격 (ms)
+
+    const track    = document.getElementById('heroTrack');
+    const slides   = Array.from(track.querySelectorAll('.hero-slide'));
+    const dots     = Array.from(document.querySelectorAll('.hero-dot'));
+    const progress = document.getElementById('heroProgress');
+
+    let current = 0;
+    let timer   = null;
+    let progTimer = null;
+
+    function goTo(n) {
+      slides[current].classList.remove('is-active');
+      dots[current].classList.remove('active');
+
+      current = (n + slides.length) % slides.length;
+
+      track.style.transform = `translateX(${-current * 100}%)`;
+      slides[current].classList.add('is-active');
+      dots[current].classList.add('active');
+
+      startProgress();
+    }
+
+    function next() { goTo(current + 1); }
+
+    function startProgress() {
+      clearTimeout(progTimer);
+      progress.style.transition = 'none';
+      progress.style.width = '0%';
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          progress.style.transition = `width ${INTERVAL}ms linear`;
+          progress.style.width = '100%';
+        });
+      });
+    }
+
+    function startTimer() {
+      clearInterval(timer);
+      timer = setInterval(next, INTERVAL);
+    }
+
+    // 도트 클릭
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        goTo(i);
+        startTimer();
+      });
+    });
+
+    // 초기 실행
+    startProgress();
+    startTimer();
+  })();
+</script>
+
+  <!-- ── LOCK OVERLAYS (page 밖 — fixed positioning 정상 작동) ── -->
+  <div class="artists-lock" id="projectsLock">
+    <div class="artists-lock-icon">— ✦ —</div>
+    <div class="artists-lock-label">Members access only.</div>
+    <button class="artists-lock-btn" onclick="openAuthModal('projects')">Enter Password</button>
+  </div>
+
+  <div class="artists-lock" id="artistsLock">
+    <div class="artists-lock-icon">— ✦ —</div>
+    <div class="artists-lock-label">Members access only.</div>
+    <button class="artists-lock-btn" onclick="openAuthModal('artists')">Enter Password</button>
+  </div>
+
+  <!-- ── AUTH MODAL (page 밖 — 어느 페이지에서도 작동) ── -->
+  <div class="auth-modal-backdrop" id="authModalBackdrop" onclick="closeAuthModal(event)">
+    <div class="auth-modal" onclick="event.stopPropagation()">
+      <div class="auth-modal-title">Members Access</div>
+      <div class="auth-modal-sub" id="authModalSub">Enter your password to access members-only content.</div>
+      <input
+        class="auth-modal-field"
+        id="authInput"
+        type="password"
+        placeholder="Password"
+        onkeydown="if(event.key==='Enter') submitAuth()"
+        autocomplete="current-password"
+      />
+      <div class="auth-modal-error" id="authError"></div>
+      <div class="auth-modal-actions">
+        <button class="auth-modal-submit" onclick="submitAuth()">Confirm</button>
+        <button class="auth-modal-cancel" onclick="closeAuthModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
